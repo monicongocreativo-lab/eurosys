@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gaming | Eurosys Protótipo</title>
+    <meta
+      name="description"
+      content="Categoria Gaming do protótipo local Eurosys, com builds gaming ligadas à página de produto V2."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-catalog-category="Gaming">
+    <header class="site-header">
+      <div class="service-bar">
+        <div class="container service-bar__inner">
+          <span>Portes grátis acima de EUR 999</span>
+          <span>Pagamentos seguros</span>
+          <span>Assistência técnica especializada</span>
+          <a href="#empresas">Soluções para empresas</a>
+        </div>
+      </div>
+
+      <div class="container header-main">
+        <div class="brand-cluster">
+          <button class="menu-button" type="button" data-side-menu-toggle aria-label="Abrir menu lateral" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a class="brand" href="./index.html" aria-label="Eurosys">
+            <img src="./assets/logo-eurosys-w.svg" alt="Eurosys" />
+          </a>
+        </div>
+
+        <form class="search-form" role="search">
+          <label class="sr-only" for="search">Pesquisar produtos</label>
+          <input id="search" type="search" placeholder="Procura por NUC, ASUS, AIO, RTX 4060..." />
+          <button type="submit" aria-label="Pesquisar">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.35-4.35" />
+              <circle cx="11" cy="11" r="7" />
+            </svg>
+          </button>
+        </form>
+
+        <nav class="header-actions" aria-label="Ações rápidas">
+          <a class="action-pill action-pill--support" href="#suporte">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21a8.5 8.5 0 1 0-8.5-8.5" />
+              <path d="M3 21v-5h5" />
+              <path d="M9.5 9.5a2.8 2.8 0 0 1 5 1.7c0 2.1-2.5 2.2-2.5 4" />
+              <path d="M12 18h.01" />
+            </svg>
+            <span>Suporte | Comunidade</span>
+          </a>
+          <a class="action-pill action-pill--business" href="#empresas">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="7" width="18" height="13" rx="2" />
+              <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+              <path d="M3 13h18" />
+            </svg>
+            <span>Soluções para empresas</span>
+          </a>
+          <button class="icon-button compare-action" type="button" data-compare-toggle aria-label="Abrir comparador">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 7h12" />
+              <path d="m15 3 4 4-4 4" />
+              <path d="M17 17H5" />
+              <path d="m9 13-4 4 4 4" />
+            </svg>
+            <span data-compare-count>0</span>
+          </button>
+          <button class="icon-button" type="button" data-wishlist-toggle aria-label="Abrir lista de desejos">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
+            </svg>
+            <span data-wishlist-count>0</span>
+          </button>
+          <button class="icon-button icon-link identity-action login-action" type="button" data-login-toggle aria-label="Abrir login">
+            <strong class="identity-action__label">Login -</strong>
+            <svg class="identity-icon identity-icon--user" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 31.5c8.2 0 14.8-6.6 14.8-14.8S40.2 2 32 2 17.2 8.6 17.2 16.7 23.8 31.5 32 31.5Z" />
+              <path d="M9.5 58c1.1-13.2 10.6-22.4 22.5-22.4S53.4 44.8 54.5 58" />
+              <path d="M15.4 58h33.2" />
+            </svg>
+          </button>
+          <button class="icon-button identity-action cart-action" type="button" data-cart-toggle aria-label="Abrir carrinho">
+            <span class="cart-icon-wrap" aria-hidden="true">
+              <img class="cart-icon" src="./assets/cart.svg" alt="" />
+            </span>
+            <span data-cart-count>0</span>
+          </button>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar modo claro e escuro">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v2" />
+              <path d="M12 19v2" />
+              <path d="M4.22 4.22l1.42 1.42" />
+              <path d="M18.36 18.36l1.42 1.42" />
+              <path d="M3 12h2" />
+              <path d="M19 12h2" />
+              <path d="M4.22 19.78l1.42-1.42" />
+              <path d="M18.36 5.64l1.42-1.42" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <div class="container main-nav__inner">
+          <a href="./computadores.html">Computadores</a>
+          <a href="./gaming.html" class="is-active">Gaming</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-office">Office</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">Workstations</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-all-in-one">All-in-One</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-mini-pcs">Mini PCs (NUC)</a>
+          <a href="https://eurosys.pt/catalogo?categoria=portateis">Portáteis</a>
+          <a href="https://eurosys.pt/builder">PC Builder</a>
+          <a href="https://eurosys.pt/promocoes">Promoções</a>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="side-menu" data-side-menu aria-label="Menu Eurosys">
+      <div class="side-menu__header">
+        <img src="./assets/logo-eurosys-w.svg" alt="Eurosys" />
+        <button type="button" data-side-menu-close aria-label="Fechar menu">×</button>
+      </div>
+      <div class="side-menu__content">
+        <button class="side-menu__mode" type="button" data-theme-toggle aria-label="Alternar modo claro e escuro">
+          <span>Modo claro / escuro</span>
+          <small data-theme-label>Modo claro</small>
+        </button>
+        <strong>Catálogo</strong>
+        <a href="./computadores.html">Computadores</a>
+        <a href="./gaming.html">Gaming</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-office">Office</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">Workstations</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-all-in-one">All-in-One</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-mini-pcs">Mini PCs (NUC)</a>
+        <a href="https://eurosys.pt/catalogo?categoria=portateis">Portáteis</a>
+        <a href="https://eurosys.pt/promocoes">Promoções</a>
+        <a href="https://eurosys.pt/builder">PC Builder</a>
+        <strong>Contacto</strong>
+        <a href="#contacto">Contacto</a>
+        <a href="#suporte">Suporte e Comunidade</a>
+        <a href="#garantia">Garantia e RMA</a>
+        <a href="#faq">FAQ</a>
+        <a href="#empresas">Soluções para Empresas</a>
+        <a href="#sobre">Sobre a Eurosys</a>
+      </div>
+    </aside>
+    <div class="scrim" data-scrim></div>
+
+    <aside class="login-popup" data-login-popup role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <div class="login-popup__header">
+        <strong id="login-title">Entrar na conta</strong>
+        <button type="button" data-login-close aria-label="Fechar login">×</button>
+      </div>
+      <form class="login-form" data-login-form>
+        <label>
+          Email
+          <input type="email" placeholder="email@exemplo.pt" autocomplete="email" required />
+        </label>
+        <label>
+          Password
+          <input type="password" placeholder="A sua password" autocomplete="current-password" required />
+        </label>
+        <button type="submit">Entrar</button>
+        <div class="login-links">
+          <a href="#recuperar-password">Esqueceu a password?</a>
+          <a href="#criar-conta">Criar conta</a>
+        </div>
+      </form>
+    </aside>
+
+    <aside class="drawer cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" data-cart-drawer>
+      <div class="drawer__header">
+        <div class="cart-drawer__title">
+          <span class="cart-drawer__icon" aria-hidden="true"><img src="./assets/cart.svg" alt="" /></span>
+          <strong id="cart-drawer-title">Carrinho <span data-cart-title-count>(0)</span></strong>
+        </div>
+        <button type="button" data-cart-close aria-label="Fechar carrinho">×</button>
+      </div>
+      <div class="drawer__body" data-cart-body>
+        <p>O seu carrinho está vazio.</p>
+      </div>
+      <div class="drawer__footer" data-cart-footer>
+        <button type="button" data-checkout-button>Finalizar compra</button>
+      </div>
+    </aside>
+
+    <aside class="drawer" data-wishlist-drawer aria-label="Lista de desejos">
+      <div class="drawer__header">
+        <strong>Lista de desejos</strong>
+        <button type="button" data-wishlist-close aria-label="Fechar lista de desejos">×</button>
+      </div>
+      <div class="drawer__body" data-wishlist-body>
+        <p>A sua lista de desejos está vazia.</p>
+      </div>
+    </aside>
+
+    <aside class="drawer drawer--wide" data-compare-drawer aria-label="Comparador">
+      <div class="drawer__header">
+        <strong>Comparador</strong>
+        <button type="button" data-compare-close aria-label="Fechar comparador">×</button>
+      </div>
+      <div class="drawer__body" data-compare-body>
+        <p>Selecione até duas máquinas para comparar componentes e configuração.</p>
+      </div>
+    </aside>
+
+    <main>
+      <section class="catalog-page-intro">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Percurso">
+            <a href="./index.html">Início</a>
+            <span>›</span>
+            <a href="./computadores.html">Catálogo</a>
+            <span>/</span>
+            <strong>Gaming</strong>
+          </nav>
+          <a class="catalog-back-link" href="./index.html" aria-label="Voltar à página inicial">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" />
+            </svg>
+            Voltar
+          </a>
+          <h1>Gaming</h1>
+          <p>Explora computadores gaming com filtros rápidos, especificações visíveis e ligação direta à página de produto V2.</p>
+        </div>
+      </section>
+
+      <section class="catalog-band" id="catalogo">
+        <div class="container catalog-shell">
+          <section class="top-sales" aria-labelledby="top-sales-title">
+            <div class="top-sales__header">
+              <h2 id="top-sales-title">Topo de vendas | Novidades</h2>
+            </div>
+            <div class="top-sales__carousel">
+              <button class="top-sales__arrow top-sales__arrow--prev" type="button" data-top-sales-prev aria-label="Produto anterior">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+              </button>
+              <div class="top-sales__track" data-top-sales-track>
+                <a class="top-sales__item top-sales__item--aston" href="./produto.html">
+                  <span class="top-sales__image"><img src="./assets/category-cutouts/aston-58u7v2-hyperreal.png" alt="ASTON-58U7V2" /></span>
+                  <strong>ASTON-58U7V2</strong>
+                  <span class="top-sales__desc">Alto desempenho | refrigeração líquida | RGB</span>
+                </a>
+                <a class="top-sales__item top-sales__item--raptor" href="./produto.html">
+                  <span class="top-sales__image"><img src="./assets/category-cutouts/RAPTOR-60R5V11-hyperreal.png" alt="RAPTOR-60R5V11" /></span>
+                  <strong>RAPTOR-60R5V11</strong>
+                  <span class="top-sales__desc">Gaming | airflow frontal | RGB</span>
+                </a>
+                <a class="top-sales__item top-sales__item--hydra" href="./produto.html">
+                  <span class="top-sales__image"><img src="./assets/category-cutouts/HYDRA-56i5V2-56R7V4-hyperreal.png" alt="HYDRA-56i5V2 / 56R7V4" /></span>
+                  <strong>HYDRA-56i5V2 / 56R7V4</strong>
+                  <span class="top-sales__desc">Performance equilibrada | gaming e produtividade</span>
+                </a>
+              </div>
+              <button class="top-sales__arrow top-sales__arrow--next" type="button" data-top-sales-next aria-label="Produto seguinte">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6" /></svg>
+              </button>
+            </div>
+          </section>
+          <button class="mobile-filter-button" type="button" data-filter-toggle aria-controls="catalog-filters" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 21v-7" />
+              <path d="M4 10V3" />
+              <path d="M12 21v-9" />
+              <path d="M12 8V3" />
+              <path d="M20 21v-5" />
+              <path d="M20 12V3" />
+              <path d="M2 14h4" />
+              <path d="M10 8h4" />
+              <path d="M18 16h4" />
+            </svg>
+            Filtros
+          </button>
+          <aside class="filters filters--catalog catalog-filter-v2" id="catalog-filters" data-filter-panel aria-label="Filtros do catálogo">
+            <div class="filters__header">
+              <strong>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 21v-7" />
+                  <path d="M4 10V3" />
+                  <path d="M12 21v-9" />
+                  <path d="M12 8V3" />
+                  <path d="M20 21v-5" />
+                  <path d="M20 12V3" />
+                  <path d="M2 14h4" />
+                  <path d="M10 8h4" />
+                  <path d="M18 16h4" />
+                </svg>
+                Filtros
+              </strong>
+              <div class="filters__actions">
+                <button type="button" data-filter-clear>Limpar</button>
+                <button class="filters__close" type="button" data-filter-close aria-label="Fechar filtros">×</button>
+              </div>
+            </div>
+
+            <fieldset class="filter-group filter-group--category" data-filter-group="familias">
+              <legend><span>Computadores</span></legend>
+              <label><input type="checkbox" value="Gaming" checked /> <span></span><b>Gaming</b></label>
+              <label><input type="checkbox" value="Office" /> <span></span><b>Office</b></label>
+              <label><input type="checkbox" value="All-in-One" /> <span></span><b>All-in-One</b></label>
+              <label><input type="checkbox" value="Mini PCs" /> <span></span><b>Mini PCs</b></label>
+              <label><input type="checkbox" value="Portáteis" /> <span></span><b>Laptop | Portáteis</b></label>
+              <label><input type="checkbox" value="Componentes" /> <span></span><b>Componentes</b></label>
+            </fieldset>
+
+            <fieldset class="filter-group filter-group--compact" data-filter-group="desempenho">
+              <legend>
+                <span class="filter-title">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 10-13h-7l1-7Z" /></svg>
+                  Desempenho
+                </span>
+                <span class="filter-tabs"><button class="is-active" type="button" data-filter-tab="all">Todas</button></span>
+                <svg class="filter-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </legend>
+              <label><input type="checkbox" value="entrada" /> <span></span><b><strong>RAPTOR</strong> / Entrada</b></label>
+              <label><input type="checkbox" value="intermedio" /> <span></span><b><strong>HYDRA</strong> / Intermédio</b></label>
+              <label><input type="checkbox" value="gaming" /> <span></span><b><strong>ASTON</strong> / Alto Desempenho</b></label>
+            </fieldset>
+
+            <fieldset class="filter-group filter-group--advanced filter-group--square" data-filter-group="processador">
+              <legend>
+                <span class="filter-title filter-title--large">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="7" y="7" width="10" height="10" rx="1" />
+                    <path d="M4 9h3M4 15h3M17 9h3M17 15h3M9 4v3M15 4v3M9 17v3M15 17v3" />
+                  </svg>
+                  CPU
+                </span>
+                <span class="filter-tabs"><button class="is-active" type="button" data-filter-tab="all">Todas</button><button type="button" data-filter-tab="amd">AMD</button><button type="button" data-filter-tab="intel">Intel</button></span>
+              </legend>
+              <div class="filter-subsection" data-filter-section="amd">
+                <strong>AMD</strong>
+                <label><input type="checkbox" value="ryzen3 3200g" /> <span></span><b>RYZEN3 3200G</b><em>1</em></label>
+                <label><input type="checkbox" value="ryzen5 4500" /> <span></span><b>RYZEN5 4500</b><em>4</em></label>
+                <label><input type="checkbox" value="ryzen5 5500" /> <span></span><b>RYZEN5 5500</b><em>7</em></label>
+                <label><input type="checkbox" value="ryzen5 5500gt" /> <span></span><b>RYZEN5 5500GT</b><em>2</em></label>
+                <label><input type="checkbox" value="ryzen5 5600" /> <span></span><b>RYZEN5 5600</b><em>1</em></label>
+              </div>
+              <div class="filter-subsection" data-filter-section="intel">
+                <strong>Intel</strong>
+                <label><input type="checkbox" value="i3 12100" /> <span></span><b>I3 12100</b><em>3</em></label>
+                <label><input type="checkbox" value="i3 13100" /> <span></span><b>I3 13100</b><em>2</em></label>
+                <label><input type="checkbox" value="i3 14100" /> <span></span><b>I3 14100</b><em>1</em></label>
+                <label><input type="checkbox" value="i3 14100f" /> <span></span><b>I3 14100F</b><em>1</em></label>
+                <label><input type="checkbox" value="i3-1215u" /> <span></span><b>I3-1215U</b><em>3</em></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-group filter-group--advanced filter-group--square" data-filter-group="grafica">
+              <legend>
+                <span class="filter-title filter-title--large">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="4" y="7" width="14" height="10" rx="1" />
+                    <path d="M18 10h2v4h-2M8 7V4M14 7V4M8 20v-3M14 20v-3" />
+                    <circle cx="10" cy="12" r="2" />
+                  </svg>
+                  GPU
+                </span>
+                <span class="filter-tabs"><button class="is-active" type="button" data-filter-tab="all">Todas</button><button type="button" data-filter-tab="amd">AMD</button><button type="button" data-filter-tab="nvidia">NVIDIA</button></span>
+              </legend>
+              <div class="filter-mini-tabs"><button type="button" data-filter-chip="4gb">4GB</button><button type="button" data-filter-chip="6gb">6GB</button><button type="button" data-filter-chip="8gb">8GB</button><button type="button" data-filter-chip="12gb">12GB</button><button type="button" data-filter-chip="16gb">16GB</button><button type="button" data-filter-chip="24gb">24GB</button><button type="button" data-filter-chip="32gb">32GB</button></div>
+              <div class="filter-subsection" data-filter-section="amd">
+                <strong>AMD</strong>
+                <label><input type="checkbox" value="rx 7600 8gb" /> <span></span><b>RX 7600 8GB</b><em>3</em></label>
+                <label><input type="checkbox" value="rx 9060xt 16gb" /> <span></span><b>RX 9060XT 16GB</b><em>2</em></label>
+                <label><input type="checkbox" value="rx 9060xt 16gb oc" /> <span></span><b>RX 9060XT 16GB OC</b><em>3</em></label>
+                <label><input type="checkbox" value="rx 9070xt 16gb" /> <span></span><b>RX 9070XT 16GB</b><em>7</em></label>
+              </div>
+              <div class="filter-subsection" data-filter-section="nvidia">
+                <strong>NVIDIA</strong>
+                <label><input type="checkbox" value="rtx 3050 6gb oc" /> <span></span><b>RTX 3050 6GB OC</b><em>7</em></label>
+                <label><input type="checkbox" value="rtx 3050 8gb" /> <span></span><b>RTX 3050 8GB</b><em>3</em></label>
+                <label><input type="checkbox" value="rtx 5050 8gb" /> <span></span><b>RTX 5050 8GB</b><em>3</em></label>
+                <label><input type="checkbox" value="rtx 5050 8gb oc" /> <span></span><b>RTX 5050 8GB OC</b><em>8</em></label>
+                <label><input type="checkbox" value="rtx 5060 8gb" /> <span></span><b>RTX 5060 8GB</b><em>19</em></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-group filter-group--advanced filter-group--round" data-filter-group="memoria">
+              <legend>
+                <span class="filter-title filter-title--large">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="4" y="8" width="16" height="8" rx="1" />
+                    <path d="M7 16v3M11 16v3M15 16v3M19 16v3M7 5v3M11 5v3M15 5v3M19 5v3" />
+                  </svg>
+                  RAM
+                </span>
+                <span class="filter-tabs"><button class="is-active" type="button" data-filter-tab="all">Todas</button><button type="button" data-filter-tab="ddr4">DDR4</button><button type="button" data-filter-tab="ddr5">DDR5</button></span>
+              </legend>
+              <div class="filter-mini-tabs"><button type="button" data-filter-chip="8gb">8GB</button><button type="button" data-filter-chip="16gb">16GB</button><button type="button" data-filter-chip="24gb">24GB</button><button type="button" data-filter-chip="32gb">32GB</button><button type="button" data-filter-chip="48gb">48GB</button><button type="button" data-filter-chip="64gb">64GB</button><button type="button" data-filter-chip="128gb">128GB+</button></div>
+              <div class="filter-subsection" data-filter-section="ddr4">
+                <strong>Memórias desktop DDR4</strong>
+                <label><input type="checkbox" value="ram 16gb ddr4 3200 cl16" /> <span></span><b>RAM 16GB DDR4 3200 CL16</b><em>4</em></label>
+                <label><input type="checkbox" value="ram 16gb ddr4 3600 cl18" /> <span></span><b>RAM 16GB DDR4 3600 CL18</b><em>1</em></label>
+                <label><input type="checkbox" value="ram 32gb ddr4 3200 cl16" /> <span></span><b>RAM 32GB DDR4 3200 CL16</b><em>2</em></label>
+                <label><input type="checkbox" value="ram 8gb ddr4 3200 cl16" /> <span></span><b>RAM 8GB DDR4 3200 CL16</b><em>2</em></label>
+              </div>
+              <div class="filter-subsection" data-filter-section="ddr5">
+                <strong>Memórias desktop DDR5</strong>
+                <label><input type="checkbox" value="ram 16gb ddr5 4800 cl40" /> <span></span><b>RAM 16GB DDR5 4800 CL40</b><em>7</em></label>
+                <label><input type="checkbox" value="ram 16gb ddr5 5600 cl40" /> <span></span><b>RAM 16GB DDR5 5600 CL40</b><em>1</em></label>
+                <label><input type="checkbox" value="ram 16gb ddr5 5600 cl46" /> <span></span><b>RAM 16GB DDR5 5600 CL46</b><em>14</em></label>
+                <label><input type="checkbox" value="ram 16gb ddr5 6000 cl38" /> <span></span><b>RAM 16GB DDR5 6000 CL38</b><em>43</em></label>
+                <label><input type="checkbox" value="ram 32gb ddr5 5600 cl46" /> <span></span><b>RAM 32GB DDR5 5600 CL46</b><em>2</em></label>
+                <label><input type="checkbox" value="ram 32gb ddr5 6000 cl30" /> <span></span><b>RAM 32GB DDR5 6000 CL30</b><em>5</em></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter-group filter-group--advanced filter-group--square" data-filter-group="armazenamento">
+              <legend>
+                <span class="filter-title filter-title--large">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="5" y="5" width="14" height="14" rx="2" />
+                    <path d="M8 15h8M8 9h3" />
+                    <circle cx="16" cy="9" r="1" />
+                  </svg>
+                  Disco
+                </span>
+                <span class="filter-tabs"><button class="is-active" type="button" data-filter-tab="all">Todas</button><button type="button" data-filter-tab="hdd">HDD</button><button type="button" data-filter-tab="ssd">SSD</button><button type="button" data-filter-tab="nvme">NVME</button></span>
+              </legend>
+              <div class="filter-subsection" data-filter-section="hdd">
+                <strong>HDD SATA</strong>
+                <label><input type="checkbox" value="240/256 gb" /> <span></span><b>240/256 GB</b><em>3</em></label>
+                <label><input type="checkbox" value="480/512 gb" /> <span></span><b>480/512 GB</b><em>1</em></label>
+                <label><input type="checkbox" value="1 tb" /> <span></span><b>1 TB</b><em>1</em></label>
+                <label><input type="checkbox" value="2 tb" /> <span></span><b>2 TB</b><em>1</em></label>
+              </div>
+              <div class="filter-subsection" data-filter-section="ssd">
+                <strong>SSD SATA</strong>
+                <label><input type="checkbox" value="120/128 gb" /> <span></span><b>120/128 GB</b><em>3</em></label>
+                <label><input type="checkbox" value="240/256 gb" /> <span></span><b>240/256 GB</b><em>1</em></label>
+                <label><input type="checkbox" value="480/512 gb" /> <span></span><b>480/512 GB</b><em>1</em></label>
+                <label><input type="checkbox" value="1tb" /> <span></span><b>1TB</b><em>1</em></label>
+              </div>
+              <div class="filter-subsection" data-filter-section="nvme">
+                <strong>SSD NVME</strong>
+                <label><input type="checkbox" value="120/128 gb" /> <span></span><b>120/128 GB</b><em>3</em></label>
+                <label><input type="checkbox" value="240/256 gb" /> <span></span><b>240/256 GB</b><em>1</em></label>
+                <label><input type="checkbox" value="480/512 gb" /> <span></span><b>480/512 GB</b><em>1</em></label>
+                <label><input type="checkbox" value="1tb" /> <span></span><b>1TB</b><em>1</em></label>
+              </div>
+            </fieldset>
+          </aside>
+
+          <div class="catalog-content">
+            <div class="catalog-active-row">
+              <span>Filtros activos:</span>
+              <button type="button" data-active-chip>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z" />
+                  <circle cx="7.5" cy="7.5" r="1.2" />
+                </svg>
+                Gaming
+                <em>×</em>
+              </button>
+            </div>
+
+            <div class="price-filter-row" aria-label="Filtrar por preço">
+              <button type="button" data-price-filter="0-500">até 500 €</button>
+              <button type="button" data-price-filter="500-1000">500€ - 1000€</button>
+              <button type="button" data-price-filter="1000-2000">1000€ - 2000€</button>
+              <button type="button" data-price-filter="2000-3000">2000€ - 3000€</button>
+              <button type="button" data-price-filter="3000-plus">mais de 3000€</button>
+            </div>
+
+            <div class="catalog-toolbar">
+              <div>
+                <h2><span data-visible-count>4</span> produtos encontrados</h2>
+              </div>
+              <div class="sort-tabs sort-select" aria-label="Ordenar produtos">
+                <label for="catalog-sort">Ordenar:</label>
+                <select id="catalog-sort" data-sort-select>
+                  <option value="price-asc">Preço: Crescente</option>
+                  <option value="price-desc">Preço: Decrescente</option>
+                  <option value="name-asc">Nome A-Z</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="product-grid">
+              <article class="product-card" data-product-url="./produto.html" data-cpu="I7 12700KF" data-gpu="RTX 5060 8GB" data-ram="2 x RAM 16GB DDR4 3200 CL16" data-storage="SSD NVME 1TB 2500/1800 PCIE4" data-status="Disponível">
+                <img src="https://iapc.pt/images/800x800/4790/Banners-novosite/HYDRA-56I7V1-1080.png" alt="Computer Gaming - HYDRA-56I7V1" />
+                <span>Gaming</span>
+                <h3>Computer Gaming - HYDRA-56I7V1</h3>
+                <p>RTX 5060 8GB | I7 12700KF | 2 x RAM 16GB DDR4 3200 CL16 | SSD NVME 1TB 2500/1800 PCIE4</p>
+                <div class="product-card__meta">
+                  <strong>1349,00 EUR</strong>
+                  <small>Disponível</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-url="./produto.html?produto=RAPTOR-50R5V6" data-cpu="RYZEN5 5500" data-gpu="RTX 3050 8GB" data-ram="2 x RAM 8GB DDR4 3200 CL22" data-storage="SSD SATA 512GB 550/500" data-status="Sobre Encomenda">
+                <img src="https://iapc.pt/images/800x800/4790/Banners-novosite/RAPTOR-50R5V1-1080.png" alt="Computer Gaming - RAPTOR-50R5V6" />
+                <span>Gaming</span>
+                <h3>Computer Gaming - RAPTOR-50R5V6</h3>
+                <p>RTX 3050 8GB | RYZEN5 5500 | 2 x RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB 550/500</p>
+                <div class="product-card__meta">
+                  <strong>654,00 EUR</strong>
+                  <small>Sobre Encomenda</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-url="./produto.html?produto=HYDRA-57I5V1" data-cpu="I5 14400F" data-gpu="RTX 5070 12GB" data-ram="RAM 32GB DDR4 3200 CL16" data-storage="SSD NVME 1TB 2500/1800 PCIE4" data-status="Sobre Encomenda">
+                <img src="https://iapc.pt/images/800x800/4790/Banners-novosite/HYDRA-57I5V1-1080.png" alt="Computer Gaming - HYDRA-57I5V1" />
+                <span>Gaming</span>
+                <h3>Computer Gaming - HYDRA-57I5V1</h3>
+                <p>RTX 5070 12GB | I5 14400F | RAM 32GB DDR4 3200 CL16 | SSD NVME 1TB 2500/1800 PCIE4</p>
+                <div class="product-card__meta">
+                  <strong>1509,00 EUR</strong>
+                  <small>Sobre Encomenda</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="-" data-gpu="GPU INTEGRADA C/CPU" data-ram="-" data-storage="-" data-status="Em stock (500)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/actualiza%C3%A7%C3%A3o.png" alt="Computer Office - Mouse" />
+                <span>Office</span>
+                <h3>Computer Office - Mouse</h3>
+                <p>GPU INTEGRADA C/CPU | 16GB DDR4 SO-DIMM</p>
+                <div class="product-card__meta">
+                  <strong>59,00 EUR</strong>
+                  <small>Em stock (500)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="RYZEN3 3200G" data-gpu="-" data-ram="RAM 8GB DDR4 3200 CL22" data-storage="SSD SATA 512GB 550/500" data-status="Em stock (28)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/ARTEMIS/ARTEMIS-ZEN1-1080.png" alt="Computer Office - ARTEMIS-ZEN1" />
+                <span>Office</span>
+                <h3>Computer Office - ARTEMIS-ZEN1</h3>
+                <p>RYZEN3 3200G | RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB 550/500</p>
+                <div class="product-card__meta">
+                  <strong>319,00 EUR</strong>
+                  <small>Em stock (28)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="-" data-gpu="GT 730 4GB" data-ram="2 x RAM 8GB DDR4 3200 CL22" data-storage="-" data-status="Em stock (6)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/ARTEMIS/ARTEMIS-BUILDER-1080.png" alt="Computer Office - ARTEMIS-IABUILDER" />
+                <span>Office</span>
+                <h3>Computer Office - ARTEMIS-IABUILDER</h3>
+                <p>GT 730 4GB | 2 x RAM 8GB DDR4 3200 CL22</p>
+                <div class="product-card__meta">
+                  <strong>319,00 EUR</strong>
+                  <small>Em stock (6)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="-" data-gpu="GT 730 4GB" data-ram="RAM 16GB DDR5 4800 CL40" data-storage="-" data-status="Em stock (52)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/ARTEMIS/ARTEMIS-BUILDER-D5-1080.png" alt="Computer Office - ARTEMIS-IABUILDER-D5" />
+                <span>Office</span>
+                <h3>Computer Office - ARTEMIS-IABUILDER-D5</h3>
+                <p>GT 730 4GB | RAM 16GB DDR5 4800 CL40</p>
+                <div class="product-card__meta">
+                  <strong>374,00 EUR</strong>
+                  <small>Em stock (52)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="INTEL N95" data-gpu="-" data-ram="RAM 8GB SDDR4 3200 CL22" data-storage="SSD M.2 256GB 520/400 SATA3" data-status="Sob consulta">
+                <img src="https://www.niposom.com/4790/Banners-novosite/NUC/NUCN95-BAR-1080.png" alt="Computer Mini PCs - NUC-N95" />
+                <span>Mini PCs</span>
+                <h3>Computer Mini PCs - NUC-N95</h3>
+                <p>INTEL N95 | RAM 8GB SDDR4 3200 CL22 | SSD M.2 256GB 520/400 SATA3</p>
+                <div class="product-card__meta">
+                  <strong>404,00 EUR</strong>
+                  <small>Sob consulta</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="RYZEN5 4500" data-gpu="GT 730 4GB" data-ram="RAM 8GB DDR4 3200 CL22" data-storage="SSD SATA 512GB 550/500" data-status="Em stock (6)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/ARTEMIS/ARTEMIS-ZEN2-1080.png" alt="Computer Office - ARTEMIS-ZEN2" />
+                <span>Office</span>
+                <h3>Computer Office - ARTEMIS-ZEN2</h3>
+                <p>GT 730 4GB | RYZEN5 4500 | RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB 550/500</p>
+                <div class="product-card__meta">
+                  <strong>414,00 EUR</strong>
+                  <small>Em stock (6)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="R5 3500U" data-gpu="-" data-ram="RAM 8GB SDDR4 3200 CL22" data-storage="SSD SATA 256GB 540/500" data-status="Sob consulta">
+                <img src="https://www.niposom.com/4790/Banners-novosite/NUC/NUC-3500U_a.png" alt="Computer Mini PCs - NUC-3500U" />
+                <span>Mini PCs</span>
+                <h3>Computer Mini PCs - NUC-3500U</h3>
+                <p>R5 3500U | RAM 8GB SDDR4 3200 CL22 | SSD SATA 256GB 540/500</p>
+                <div class="product-card__meta">
+                  <strong>424,00 EUR</strong>
+                  <small>Sob consulta</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="I3-1215U" data-gpu="-" data-ram="RAM 8GB SDDR4 3200 CL22" data-storage="SSD NVME 256GB 2400/1800 PCIE4" data-status="Sob consulta">
+                <img src="https://www.niposom.com/4790/Banners-novosite/NUC/NUC1215UW11P-1080.png" alt="Computer Mini PCs - NUC-1215UW" />
+                <span>Mini PCs</span>
+                <h3>Computer Mini PCs - NUC-1215UW</h3>
+                <p>I3-1215U | RAM 8GB SDDR4 3200 CL22 | SSD NVME 256GB 2400/1800 PCIE4</p>
+                <div class="product-card__meta">
+                  <strong>444,00 EUR</strong>
+                  <small>Sob consulta</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="-" data-gpu="-" data-ram="RAM 8GB SDDR4 3200 CL22" data-storage="SSD SATA 256GB 540/500" data-status="Em stock (26)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/AIOS/24P-AIO-5095-1080.png" alt="Computer All-in-One - AIO-24-5095" />
+                <span>All-in-One</span>
+                <h3>Computer All-in-One - AIO-24-5095</h3>
+                <p>RAM 8GB SDDR4 3200 CL22 | SSD SATA 256GB 540/500</p>
+                <div class="product-card__meta">
+                  <strong>454,00 EUR</strong>
+                  <small>Em stock (26)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-url="./produto.html" data-cpu="RYZEN5 5500GT" data-gpu="GT" data-ram="2 x RAM 8GB DDR4 3200 CL22" data-storage="SSD SATA 512GB 550/500" data-status="Em stock (25)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/RAPTOR-0RR5V1-1080.png" alt="Computer Gaming - RAPTOR-0RR5V1" />
+                <span>Gaming</span>
+                <h3>Computer Gaming - RAPTOR-0RR5V1</h3>
+                <p>RYZEN5 5500GT | 2 x RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB 550/500</p>
+                <div class="product-card__meta">
+                  <strong>464,00 EUR</strong>
+                  <small>Em stock (25)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="RYZEN5 5600GT" data-gpu="GT" data-ram="2 x RAM 8GB DDR4 3200 CL22" data-storage="SSD SATA 512GB 550/500" data-status="Em stock (6)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/ARTEMIS/ARTEMIS-ZEN3-1080.png" alt="Computer Office - ARTEMIS-ZEN3" />
+                <span>Office</span>
+                <h3>Computer Office - ARTEMIS-ZEN3</h3>
+                <p>RYZEN5 5600GT | 2 x RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB 550/500</p>
+                <div class="product-card__meta">
+                  <strong>474,00 EUR</strong>
+                  <small>Em stock (6)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="I3 14100F" data-gpu="GT 730 4GB" data-ram="2 x RAM 8GB DDR4 3200 CL22" data-storage="SSD SATA 512GB 550/500" data-status="Em stock (6)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/ARTEMIS/ARTEMIS-IA-I3730-1080.png" alt="Computer Office - ARTEMIS-IA-I3730" />
+                <span>Office</span>
+                <h3>Computer Office - ARTEMIS-IA-I3730</h3>
+                <p>GT 730 4GB | I3 14100F | 2 x RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB 550/500</p>
+                <div class="product-card__meta">
+                  <strong>474,00 EUR</strong>
+                  <small>Em stock (6)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-url="./produto.html" data-cpu="RYZEN5 5600GT" data-gpu="GT" data-ram="2 x RAM 8GB DDR4 3200 CL22" data-storage="SSD SATA 512GB 550/500" data-status="Em stock (22)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/RAPTOR-0RR5V2-1080.png" alt="Computer Gaming - RAPTOR-0RR5V2" />
+                <span>Gaming</span>
+                <h3>Computer Gaming - RAPTOR-0RR5V2</h3>
+                <p>RYZEN5 5600GT | 2 x RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB 550/500</p>
+                <div class="product-card__meta">
+                  <strong>484,00 EUR</strong>
+                  <small>Em stock (22)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-product-url="./produto.html" data-cpu="RYZEN7 5750G" data-gpu="-" data-ram="2 x RAM 8GB DDR4 3200 CL22" data-storage="SSD SATA 512GB 550/500" data-status="Em stock (32)">
+                <img src="https://www.niposom.com/4790/Banners-novosite/RAPTOR-0RR7V2-1080.png" alt="Computer Gaming - RAPTOR-0RR7V2" />
+                <span>Gaming</span>
+                <h3>Computer Gaming - RAPTOR-0RR7V2</h3>
+                <p>RYZEN7 5750G | 2 x RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB 550/500</p>
+                <div class="product-card__meta">
+                  <strong>494,00 EUR</strong>
+                  <small>Em stock (32)</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="I5-1235U" data-gpu="-" data-ram="RAM 8GB SDDR4 3200 CL22" data-storage="SSD NVME 256GB 2400/1800 PCIE4" data-status="Sob consulta">
+                <img src="https://www.niposom.com/4790/Banners-novosite/NUC/NUC1235UW11P-1080.png" alt="Computer Mini PCs - NUC-1235UW" />
+                <span>Mini PCs</span>
+                <h3>Computer Mini PCs - NUC-1235UW</h3>
+                <p>I5-1235U | RAM 8GB SDDR4 3200 CL22 | SSD NVME 256GB 2400/1800 PCIE4</p>
+                <div class="product-card__meta">
+                  <strong>494,00 EUR</strong>
+                  <small>Sob consulta</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <details class="footer-panel" open>
+          <summary>Produtos</summary>
+          <a href="./computadores.html">Computadores</a>
+          <a href="./gaming.html">Gaming</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-office">Office</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">Workstations</a>
+          <a href="https://eurosys.pt/builder">PC Builder</a>
+        </details>
+        <details class="footer-panel" open>
+          <summary>Empresa</summary>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#contacto">As nossas Lojas</a>
+          <a href="#marcas">Marcas</a>
+          <a href="#carreiras">Recrutamento</a>
+          <a href="#empresas">Soluções para Empresas</a>
+        </details>
+        <details class="footer-panel" open>
+          <summary>Ajuda</summary>
+          <a href="#suporte">Assistência Técnica</a>
+          <a href="#portes">Portes de Envio</a>
+          <a href="#pagamentos">Métodos de Pagamento</a>
+          <a href="#faq">Perguntas Frequentes</a>
+          <a href="#garantia">Procedimentos de Garantia</a>
+        </details>
+        <details class="footer-panel" open>
+          <summary>Legal</summary>
+          <a href="#termos">Termos e Condições</a>
+          <a href="#privacidade">Política de Privacidade</a>
+          <a href="#cookies">Política de Cookies</a>
+          <a href="#reclamacoes">Livro de Reclamações</a>
+          <a href="#litigios">Resolução de Litígios</a>
+        </details>
+        <section class="footer-contact" aria-label="Contactos Eurosys">
+          <strong>Contactos</strong>
+          <p>Lisboa, Guarda, Castelo Branco e Aveiro</p>
+          <a href="https://wa.me/351928429780">WhatsApp +351 928 429 780</a>
+          <a href="tel:+351218440262">+351 218 440 262</a>
+          <div class="footer-social" aria-label="Redes sociais">
+            <a href="#facebook" aria-label="Facebook">f</a>
+            <a href="#instagram" aria-label="Instagram">ig</a>
+            <a href="#youtube" aria-label="YouTube">yt</a>
+          </div>
+        </section>
+      </div>
+      <div class="container footer-bottom">
+        <p><a href="#privacidade">Política de Privacidade</a> | <a href="#termos">Termos de Utilização</a> | <a href="#devolucoes">Política de Devolução</a></p>
+        <p>© 2026 Eurosys. Todos os direitos reservados. IVA incluído à taxa em vigor. As fotos apresentadas podem não corresponder às configurações descritas.</p>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

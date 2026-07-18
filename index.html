@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eurosys | Protótipo de Validação</title>
+    <meta
+      name="description"
+      content="Protótipo local para validar atualizações visuais e funcionais do site Eurosys antes de alterar a versão publicada."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="service-bar">
+        <div class="container service-bar__inner">
+          <span>Portes grátis acima de EUR 999</span>
+          <span>Pagamentos seguros</span>
+          <span>Assistência técnica especializada</span>
+          <a href="#empresas">Soluções para empresas</a>
+        </div>
+      </div>
+
+      <div class="container header-main">
+        <div class="brand-cluster">
+          <button class="menu-button" type="button" data-side-menu-toggle aria-label="Abrir menu lateral" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a class="brand" href="./index.html" aria-label="Eurosys">
+            <img src="./assets/logo-eurosys-w.svg" alt="Eurosys" />
+          </a>
+        </div>
+
+        <form class="search-form" role="search">
+          <label class="sr-only" for="search">Pesquisar produtos</label>
+          <input id="search" type="search" placeholder="Procura por NUC, ASUS, AIO, RTX 4060..." />
+          <button type="submit" aria-label="Pesquisar">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.35-4.35" />
+              <circle cx="11" cy="11" r="7" />
+            </svg>
+          </button>
+        </form>
+
+        <nav class="header-actions" aria-label="Ações rápidas">
+          <a class="action-pill action-pill--support" href="#suporte">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21a8.5 8.5 0 1 0-8.5-8.5" />
+              <path d="M3 21v-5h5" />
+              <path d="M9.5 9.5a2.8 2.8 0 0 1 5 1.7c0 2.1-2.5 2.2-2.5 4" />
+              <path d="M12 18h.01" />
+            </svg>
+            <span>Suporte | Comunidade</span>
+          </a>
+          <a class="action-pill action-pill--business" href="#empresas">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="7" width="18" height="13" rx="2" />
+              <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+              <path d="M3 13h18" />
+            </svg>
+            <span>Soluções para empresas</span>
+          </a>
+          <button class="icon-button compare-action" type="button" data-compare-toggle aria-label="Abrir comparador">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 7h12" />
+              <path d="m15 3 4 4-4 4" />
+              <path d="M17 17H5" />
+              <path d="m9 13-4 4 4 4" />
+            </svg>
+            <span data-compare-count>0</span>
+          </button>
+          <button class="icon-button" type="button" data-wishlist-toggle aria-label="Abrir lista de desejos">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
+            </svg>
+            <span data-wishlist-count>0</span>
+          </button>
+          <button class="icon-button icon-link identity-action login-action" type="button" data-login-toggle aria-label="Abrir login">
+            <strong class="identity-action__label">Login -</strong>
+            <svg class="identity-icon identity-icon--user" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 31.5c8.2 0 14.8-6.6 14.8-14.8S40.2 2 32 2 17.2 8.6 17.2 16.7 23.8 31.5 32 31.5Z" />
+              <path d="M9.5 58c1.1-13.2 10.6-22.4 22.5-22.4S53.4 44.8 54.5 58" />
+              <path d="M15.4 58h33.2" />
+            </svg>
+          </button>
+          <button class="icon-button identity-action cart-action" type="button" data-cart-toggle aria-label="Abrir carrinho">
+            <span class="cart-icon-wrap" aria-hidden="true">
+              <img class="cart-icon" src="./assets/cart.svg" alt="" />
+            </span>
+            <span data-cart-count>0</span>
+          </button>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar modo claro e escuro">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v2" />
+              <path d="M12 19v2" />
+              <path d="M4.22 4.22l1.42 1.42" />
+              <path d="M18.36 18.36l1.42 1.42" />
+              <path d="M3 12h2" />
+              <path d="M19 12h2" />
+              <path d="M4.22 19.78l1.42-1.42" />
+              <path d="M18.36 5.64l1.42-1.42" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <div class="container main-nav__inner">
+          <a href="./computadores.html">Computadores</a>
+          <a href="./gaming.html">Gaming</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-office">Office</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">Workstations</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-all-in-one">All-in-One</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-mini-pcs">Mini PCs (NUC)</a>
+          <a href="https://eurosys.pt/catalogo?categoria=portateis">Portáteis</a>
+          <a href="https://eurosys.pt/builder">PC Builder</a>
+          <a href="https://eurosys.pt/promocoes">Promoções</a>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="side-menu" data-side-menu aria-label="Menu Eurosys">
+      <div class="side-menu__header">
+        <img src="./assets/logo-eurosys-w.svg" alt="Eurosys" />
+        <button type="button" data-side-menu-close aria-label="Fechar menu">×</button>
+      </div>
+      <div class="side-menu__content">
+        <button class="side-menu__mode" type="button" data-theme-toggle aria-label="Alternar modo claro e escuro">
+          <span>Modo claro / escuro</span>
+          <small data-theme-label>Modo claro</small>
+        </button>
+        <strong>Catálogo</strong>
+        <a href="./computadores.html">Computadores</a>
+        <a href="./gaming.html">Gaming</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-office">Office</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">Workstations</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-all-in-one">All-in-One</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-mini-pcs">Mini PCs (NUC)</a>
+        <a href="https://eurosys.pt/catalogo?categoria=portateis">Portáteis</a>
+        <a href="https://eurosys.pt/promocoes">Promoções</a>
+        <a href="https://eurosys.pt/builder">PC Builder</a>
+        <strong>Contacto</strong>
+        <a href="#contacto">Contacto</a>
+        <a href="#suporte">Suporte e Comunidade</a>
+        <a href="#garantia">Garantia e RMA</a>
+        <a href="#faq">FAQ</a>
+        <a href="#empresas">Soluções para Empresas</a>
+        <a href="#sobre">Sobre a Eurosys</a>
+      </div>
+    </aside>
+    <div class="scrim" data-scrim></div>
+
+    <aside class="login-popup" data-login-popup role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <div class="login-popup__header">
+        <strong id="login-title">Entrar na conta</strong>
+        <button type="button" data-login-close aria-label="Fechar login">×</button>
+      </div>
+      <form class="login-form" data-login-form>
+        <label>
+          Email
+          <input type="email" placeholder="email@exemplo.pt" autocomplete="email" required />
+        </label>
+        <label>
+          Password
+          <input type="password" placeholder="A sua password" autocomplete="current-password" required />
+        </label>
+        <button type="submit">Entrar</button>
+        <div class="login-links">
+          <a href="#recuperar-password">Esqueceu a password?</a>
+          <a href="#criar-conta">Criar conta</a>
+        </div>
+      </form>
+    </aside>
+
+    <aside class="drawer cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" data-cart-drawer>
+      <div class="drawer__header">
+        <div class="cart-drawer__title">
+          <span class="cart-drawer__icon" aria-hidden="true"><img src="./assets/cart.svg" alt="" /></span>
+          <strong id="cart-drawer-title">Carrinho <span data-cart-title-count>(0)</span></strong>
+        </div>
+        <button type="button" data-cart-close aria-label="Fechar carrinho">×</button>
+      </div>
+      <div class="drawer__body" data-cart-body>
+        <p>O seu carrinho está vazio.</p>
+      </div>
+      <div class="drawer__footer" data-cart-footer>
+        <button type="button" data-checkout-button>Finalizar compra</button>
+      </div>
+    </aside>
+
+    <aside class="drawer" data-wishlist-drawer aria-label="Lista de desejos">
+      <div class="drawer__header">
+        <strong>Lista de desejos</strong>
+        <button type="button" data-wishlist-close aria-label="Fechar lista de desejos">×</button>
+      </div>
+      <div class="drawer__body" data-wishlist-body>
+        <p>A sua lista de desejos está vazia.</p>
+      </div>
+    </aside>
+
+    <aside class="drawer drawer--wide" data-compare-drawer aria-label="Comparador">
+      <div class="drawer__header">
+        <strong>Comparador</strong>
+        <button type="button" data-compare-close aria-label="Fechar comparador">×</button>
+      </div>
+      <div class="drawer__body" data-compare-body>
+        <p>Selecione até duas máquinas para comparar componentes e configuração.</p>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero" aria-label="Destaques Eurosys">
+        <div class="container hero__content">
+          <span class="eyebrow">Gaming, escritório e estação de trabalho</span>
+          <h1>PCs configurados para cada tipo de utilizador.</h1>
+          <p>Escolha uma máquina pronta, compare configurações ou construa o seu PC com apoio técnico antes da compra.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#builder">Abrir PC Builder</a>
+            <a class="button button--ghost" href="#catalogo">Ver computadores</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-showcase" aria-labelledby="category-title">
+        <div class="container">
+          <div class="section-heading category-heading">
+            <div>
+              <span>Explorar catálogo</span>
+              <h2 id="category-title">Comprar por categoria</h2>
+            </div>
+            <a href="https://eurosys.pt/catalogo">Ver catálogo completo</a>
+          </div>
+          <div class="category-grid">
+            <a href="./computadores.html">
+              <img src="./assets/category-cutouts/computers-v2.png" alt="Computers" />
+              <strong>Computers</strong>
+            </a>
+            <a href="./gaming.html">
+              <img src="./assets/category-cutouts/gaming-v2.png" alt="Gaming" />
+              <strong>Gaming</strong>
+            </a>
+            <a href="https://eurosys.pt/catalogo?categoria=computer-office">
+              <img src="./assets/category-cutouts/office-v2.png" alt="Office" />
+              <strong>Office</strong>
+            </a>
+            <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">
+              <img src="./assets/category-cutouts/workstation-v2.png" alt="Workstations" />
+              <strong>Workstations</strong>
+            </a>
+            <a href="https://eurosys.pt/catalogo?categoria=computer-all-in-one">
+              <img src="./assets/category-cutouts/all-in-one-v2.png" alt="All-in-One" />
+              <strong>All-in-One</strong>
+            </a>
+            <a href="https://eurosys.pt/catalogo?categoria=computer-mini-pcs">
+              <img src="./assets/category-cutouts/mini-pcs-v2.png" alt="Mini PCs" />
+              <strong>Mini PCs</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section" id="builder">
+        <div class="section-heading">
+          <span>PC Builder</span>
+          <h2>Escolhe pelo teu orçamento</h2>
+        </div>
+        <div class="budget-grid">
+          <a class="budget-card budget-card--dark" href="#gaming">
+            <span>Acessível</span>
+            <strong>Gaming até EUR 850</strong>
+            <p>Entrada perfeita para jogar com fluidez e qualidade.</p>
+            <em>Ver configurações</em>
+          </a>
+          <a class="budget-card budget-card--blue" href="#gaming">
+            <span>Mais popular</span>
+            <strong>Gaming até EUR 1.300</strong>
+            <p>Desempenho sólido para títulos exigentes em alta resolução.</p>
+            <em>Ver configurações</em>
+          </a>
+          <a class="budget-card budget-card--purple" href="#workstations">
+            <span>Premium</span>
+            <strong>Workstations</strong>
+            <p>Potência para criação de conteúdo, vídeo e design 3D.</p>
+            <em>Ver configurações</em>
+          </a>
+        </div>
+      </section>
+
+      <section class="catalog-band" id="catalogo">
+        <div class="container catalog-shell catalog-shell--home">
+          <div class="catalog-content">
+            <div class="catalog-toolbar">
+              <div>
+                <h2>Computadores em destaque</h2>
+                <p>Cartões com ações para comparar, guardar na lista de desejos e adicionar ao carrinho.</p>
+              </div>
+              <select aria-label="Ordenar produtos">
+                <option>Ordenar: mais recentes</option>
+                <option>Preço crescente</option>
+                <option>Preço decrescente</option>
+              </select>
+            </div>
+
+            <div class="product-grid">
+              <article class="product-card" data-cpu="Intel i5 14400" data-gpu="Intel UHD" data-ram="16GB DDR5" data-storage="SSD 512GB" data-status="Sob encomenda">
+                <img
+                  src="https://iapc.pt/images/800x800/4790/Banners-novosite/ARTEMIS/ARTEMIS-IA5PRO-1080.png"
+                  alt="ARTEMIS IA5PRO"
+                />
+                <span>Office</span>
+                <h3>Computer Office - ARTEMIS-IA5PRO</h3>
+                <p>I5 14400 | RAM 16GB DDR5 | SSD SATA 512GB</p>
+                <div class="product-card__meta">
+                  <strong>624,00 EUR</strong>
+                  <small>Sob encomenda</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="Intel i5 13420H" data-gpu="Intel Iris Xe" data-ram="32GB DDR4" data-storage="SSD NVME 1TB" data-status="Em stock">
+                <img src="https://iapc.pt/static/compounds/789d1b9d-9d60-4cdb-a1c4-172fef63ba56.png" alt="Portátil Vivobook" />
+                <span>Portáteis</span>
+                <h3>Portáteis - VIVOBOOK-I5</h3>
+                <p>I5 13420H | 32GB DDR4 SO-DIMM | SSD NVME 1TB</p>
+                <div class="product-card__meta">
+                  <strong>714,00 EUR</strong>
+                  <small>Em stock</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+
+              <article class="product-card" data-cpu="Intel U5-225U" data-gpu="Intel Graphics" data-ram="32GB DDR5" data-storage="SSD NVME 512GB" data-status="Sob encomenda">
+                <img src="https://iapc.pt/static/compounds/99f3096e-e532-444b-a61a-11769b2af4cb.png" alt="Portátil HP" />
+                <span>Profissional</span>
+                <h3>Portáteis - BL6U7EA</h3>
+                <p>U5-225U | RAM 32GB DDR5 | SSD NVME 512GB</p>
+                <div class="product-card__meta">
+                  <strong>774,00 EUR</strong>
+                  <small>Sob encomenda</small>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" data-add-cart>Adicionar</button>
+                  <button type="button" data-add-wishlist>Guardar</button>
+                  <button type="button" data-add-compare>Comparar</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="commercial-hero" id="gaming">
+        <div class="container commercial-hero__inner">
+          <div>
+            <span>Performance máxima</span>
+            <h2>Builds Gaming prontas a vencer</h2>
+            <p>Encontra configurações equilibradas com upgrade fácil de RAM e SSD para streams, FPS competitivos e criação de conteúdo.</p>
+          </div>
+          <a class="button button--primary" href="./gaming.html">Ver Builds Gaming</a>
+        </div>
+      </section>
+
+      <section class="container commercial-grid">
+        <article class="commercial-card" id="builder-comercial">
+          <span>Monta o teu PC</span>
+          <h2>Montar do zero com assistente inteligente</h2>
+          <p>Responde a algumas perguntas sobre o que vais fazer no PC e a nossa IA compõe uma build compatível e dentro do orçamento. Podes personalizar tudo a seguir.</p>
+          <a href="https://eurosys.pt/builder">Começar agora</a>
+        </article>
+        <article class="commercial-card commercial-card--business" id="empresas">
+          <span>Soluções empresariais</span>
+          <h2>Equipamento para escritórios, equipas e pequenas empresas</h2>
+          <p>Compra com NIF, recebe apoio técnico em português e prepara rapidamente postos de trabalho com PCs, portáteis e periféricos prontos a usar.</p>
+          <div class="tag-row">
+            <b>Fatura com NIF</b>
+            <b>Garantia e suporte</b>
+            <b>Compras assistidas</b>
+          </div>
+        </article>
+      </section>
+
+      <section class="help-panel container" id="suporte">
+        <div>
+          <span>Precisas de ajuda a escolher?</span>
+          <h2>Apoio para encontrar a configuração certa.</h2>
+          <p>Descobre equipamentos para escritório, home office e equipas em crescimento com preços transparentes e entrega rápida.</p>
+        </div>
+        <div class="help-panel__actions">
+          <a class="button button--primary" href="https://eurosys.pt/catalogo?categoria=computer-office">Ver soluções para empresas</a>
+          <a class="button button--light" href="https://wa.me/351928429780">Falar no WhatsApp</a>
+        </div>
+      </section>
+
+      <section class="newsletter-block" aria-labelledby="newsletter-title">
+        <div class="container newsletter-block__inner">
+          <div>
+            <span>Newsletter</span>
+            <h2 id="newsletter-title">Temos novidades, ofertas e descontos todos os dias.</h2>
+            <p>Recebe campanhas, lançamentos e sugestões de configuração diretamente no teu email.</p>
+          </div>
+          <form class="newsletter-form">
+            <label class="sr-only" for="newsletter-email">Email profissional</label>
+            <input id="newsletter-email" type="email" placeholder="O seu email profissional" />
+            <button type="submit">Subscrever</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="container stores-section" id="contacto">
+        <div class="section-heading">
+          <span>Lojas Eurosys</span>
+          <h2>Contactos e atendimento</h2>
+        </div>
+        <div class="stores-grid">
+          <article>
+            <strong>Lisboa</strong>
+            <p>Largo Casal Vistoso, 1 B<br />1900-142 Lisboa</p>
+            <a href="tel:+351218440262">+351 218 440 262/263</a>
+            <a href="https://wa.me/351928429780">WhatsApp +351 928 429 780</a>
+          </article>
+          <article>
+            <strong>Guarda</strong>
+            <p>Av. Cidade de Bejar, 10 R/C Esq.<br />6300-534 Guarda</p>
+            <a href="tel:+351271214146">+351 271 214 146</a>
+            <a href="https://wa.me/351928421514">WhatsApp +351 928 421 514</a>
+          </article>
+          <article>
+            <strong>Castelo Branco</strong>
+            <p>Praceta Dr. Manuel Pires Bento, Lote 14 - S/c.<br />6000-123 Castelo Branco</p>
+            <a href="tel:+351272085949">+351 272 085 949</a>
+            <a href="https://wa.me/351928426533">WhatsApp +351 928 426 533</a>
+          </article>
+          <article>
+            <strong>Aveiro</strong>
+            <p>R. Dr. Mário Sacramento, 141<br />3810-106 Aveiro</p>
+            <a href="tel:+351234383883">+351 234 383 883</a>
+            <a href="https://wa.me/351916994703">WhatsApp +351 916 994 703</a>
+          </article>
+        </div>
+        <p class="store-note">Custo da chamada para rede fixa nacional.</p>
+      </section>
+      <section class="trust-strip" aria-label="Vantagens">
+        <div class="container trust-grid">
+          <article>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+              <path d="M15 18H9" />
+              <path d="M19 18h2a1 1 0 0 0 1-1v-3.6a1 1 0 0 0-.2-.6L18.3 8.4A1 1 0 0 0 17.5 8H14" />
+              <circle cx="7" cy="18" r="2" />
+              <circle cx="17" cy="18" r="2" />
+            </svg>
+            <div>
+              <strong>Portes Grátis</strong>
+              <span>Em encomendas acima de EUR 999</span>
+            </div>
+          </article>
+          <article>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11.5 2.6a.55.55 0 0 1 1 0l2.3 4.7a2.1 2.1 0 0 0 1.6 1.1l5.1.8a.55.55 0 0 1 .3.9l-3.7 3.6a2.1 2.1 0 0 0-.6 1.9l.9 5.1a.55.55 0 0 1-.8.6L13 18.8a2.1 2.1 0 0 0-2 0l-4.6 2.4a.55.55 0 0 1-.8-.6l.9-5.1a2.1 2.1 0 0 0-.6-1.9L2.2 10a.55.55 0 0 1 .3-.9l5.1-.8a2.1 2.1 0 0 0 1.6-1.1Z" />
+            </svg>
+            <div>
+              <strong>Melhores Marcas</strong>
+              <span>Intel, AMD, NVIDIA, ASUS e mais</span>
+            </div>
+          </article>
+          <article>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.1-3.1a6 6 0 0 1-7.3 7.3l-7.9 7.9a2.1 2.1 0 0 1-3-3l7.9-7.9a6 6 0 0 1 7.3-7.3Z" />
+            </svg>
+            <div>
+              <strong>Assistência Técnica</strong>
+              <span>Suporte especializado</span>
+            </div>
+          </article>
+          <article>
+            <div class="payment-copy">
+              <strong>Pagamentos Seguros</strong>
+              <div class="payment-row" aria-label="Métodos de pagamento">
+                <span class="pay-badge pay-badge--mbway">MB WAY</span>
+                <span class="pay-badge pay-badge--mb">MULTI<br />BANCO</span>
+                <span class="pay-badge pay-badge--visa">VISA</span>
+                <span class="pay-badge pay-badge--mc"><i></i><b></b></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <details class="footer-panel" open>
+          <summary>Produtos</summary>
+          <a href="./computadores.html">Computadores</a>
+          <a href="./gaming.html">Gaming</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-office">Office</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">Workstations</a>
+          <a href="https://eurosys.pt/builder">PC Builder</a>
+        </details>
+        <details class="footer-panel" open>
+          <summary>Empresa</summary>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#contacto">As nossas Lojas</a>
+          <a href="#marcas">Marcas</a>
+          <a href="#carreiras">Recrutamento</a>
+          <a href="#empresas">Soluções para Empresas</a>
+        </details>
+        <details class="footer-panel" open>
+          <summary>Ajuda</summary>
+          <a href="#suporte">Assistência Técnica</a>
+          <a href="#portes">Portes de Envio</a>
+          <a href="#pagamentos">Métodos de Pagamento</a>
+          <a href="#faq">Perguntas Frequentes</a>
+          <a href="#garantia">Procedimentos de Garantia</a>
+        </details>
+        <details class="footer-panel" open>
+          <summary>Legal</summary>
+          <a href="#termos">Termos e Condições</a>
+          <a href="#privacidade">Política de Privacidade</a>
+          <a href="#cookies">Política de Cookies</a>
+          <a href="#reclamacoes">Livro de Reclamações</a>
+          <a href="#litigios">Resolução de Litígios</a>
+        </details>
+        <section class="footer-contact" aria-label="Contactos Eurosys">
+          <strong>Contactos</strong>
+          <p>Lisboa, Guarda, Castelo Branco e Aveiro</p>
+          <a href="https://wa.me/351928429780">WhatsApp +351 928 429 780</a>
+          <a href="tel:+351218440262">+351 218 440 262</a>
+          <div class="footer-social" aria-label="Redes sociais">
+            <a href="#facebook" aria-label="Facebook">f</a>
+            <a href="#instagram" aria-label="Instagram">ig</a>
+            <a href="#youtube" aria-label="YouTube">yt</a>
+          </div>
+        </section>
+      </div>
+      <div class="container footer-bottom">
+        <p><a href="#privacidade">Política de Privacidade</a> | <a href="#termos">Termos de Utilização</a> | <a href="#devolucoes">Política de Devolução</a></p>
+        <p>© 2026 Eurosys. Todos os direitos reservados. IVA incluído à taxa em vigor. As fotos apresentadas podem não corresponder às configurações descritas.</p>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

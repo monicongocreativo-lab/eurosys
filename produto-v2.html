@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Computer Gaming HYDRA-56I7V1 | Eurosys Protótipo</title>
+    <meta
+      name="description"
+      content="Protótipo local da página de produto Eurosys para validar galeria, compra, configuração e módulos comerciais antes de alterar a versão publicada."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="product-detail-body product-v2-body">
+    <header class="site-header">
+      <div class="service-bar">
+        <div class="container service-bar__inner">
+          <span>Portes grátis acima de EUR 999</span>
+          <span>Pagamentos seguros</span>
+          <span>Assistência técnica especializada</span>
+          <a href="#empresas">Soluções para empresas</a>
+        </div>
+      </div>
+
+      <div class="container header-main">
+        <div class="brand-cluster">
+          <button class="menu-button" type="button" data-side-menu-toggle aria-label="Abrir menu lateral" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a class="brand" href="./index.html" aria-label="Eurosys">
+            <img src="./assets/logo-eurosys-w.svg" alt="Eurosys" />
+          </a>
+        </div>
+
+        <form class="search-form" role="search">
+          <label class="sr-only" for="search">Pesquisar produtos</label>
+          <input id="search" type="search" placeholder="Procura por NUC, ASUS, AIO, RTX 4060..." />
+          <button type="submit" aria-label="Pesquisar">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.35-4.35" />
+              <circle cx="11" cy="11" r="7" />
+            </svg>
+          </button>
+        </form>
+
+        <nav class="header-actions" aria-label="Ações rápidas">
+          <a class="action-pill action-pill--support" href="#suporte">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21a8.5 8.5 0 1 0-8.5-8.5" />
+              <path d="M3 21v-5h5" />
+              <path d="M9.5 9.5a2.8 2.8 0 0 1 5 1.7c0 2.1-2.5 2.2-2.5 4" />
+              <path d="M12 18h.01" />
+            </svg>
+            <span>Suporte | Comunidade</span>
+          </a>
+          <a class="action-pill action-pill--business" href="#empresas">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="7" width="18" height="13" rx="2" />
+              <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+              <path d="M3 13h18" />
+            </svg>
+            <span>Soluções para empresas</span>
+          </a>
+          <button class="icon-button compare-action" type="button" data-compare-toggle aria-label="Abrir comparador">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 7h12" />
+              <path d="m15 3 4 4-4 4" />
+              <path d="M17 17H5" />
+              <path d="m9 13-4 4 4 4" />
+            </svg>
+            <span data-compare-count>0</span>
+          </button>
+          <button class="icon-button" type="button" data-wishlist-toggle aria-label="Abrir lista de desejos">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
+            </svg>
+            <span data-wishlist-count>0</span>
+          </button>
+          <button class="icon-button icon-link identity-action login-action" type="button" data-login-toggle aria-label="Abrir login">
+            <strong class="identity-action__label">Login -</strong>
+            <svg class="identity-icon identity-icon--user" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M32 31.5c8.2 0 14.8-6.6 14.8-14.8S40.2 2 32 2 17.2 8.6 17.2 16.7 23.8 31.5 32 31.5Z" />
+              <path d="M9.5 58c1.1-13.2 10.6-22.4 22.5-22.4S53.4 44.8 54.5 58" />
+              <path d="M15.4 58h33.2" />
+            </svg>
+          </button>
+          <button class="icon-button identity-action cart-action" type="button" data-cart-toggle aria-label="Abrir carrinho">
+            <span class="cart-icon-wrap" aria-hidden="true">
+              <img class="cart-icon" src="./assets/cart.svg" alt="" />
+            </span>
+            <span data-cart-count>0</span>
+          </button>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar modo claro e escuro">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v2" />
+              <path d="M12 19v2" />
+              <path d="M4.22 4.22l1.42 1.42" />
+              <path d="M18.36 18.36l1.42 1.42" />
+              <path d="M3 12h2" />
+              <path d="M19 12h2" />
+              <path d="M4.22 19.78l1.42-1.42" />
+              <path d="M18.36 5.64l1.42-1.42" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+          </button>
+        </nav>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <div class="container main-nav__inner">
+          <a href="./computadores.html" class="is-active">Computadores</a>
+          <a href="./gaming.html">Gaming</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-office">Office</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">Workstations</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-all-in-one">All-in-One</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-mini-pcs">Mini PCs (NUC)</a>
+          <a href="https://eurosys.pt/catalogo?categoria=portateis">Portáteis</a>
+          <a href="https://eurosys.pt/builder">PC Builder</a>
+          <a href="https://eurosys.pt/promocoes">Promoções</a>
+        </div>
+      </nav>
+    </header>
+
+    <aside class="side-menu" data-side-menu aria-label="Menu Eurosys">
+      <div class="side-menu__header">
+        <img src="./assets/logo-eurosys-w.svg" alt="Eurosys" />
+        <button type="button" data-side-menu-close aria-label="Fechar menu">×</button>
+      </div>
+      <div class="side-menu__content">
+        <button class="side-menu__mode" type="button" data-theme-toggle aria-label="Alternar modo claro e escuro">
+          <span>Modo claro / escuro</span>
+          <small data-theme-label>Modo claro</small>
+        </button>
+        <strong>Catálogo</strong>
+        <a href="./computadores.html">Computadores</a>
+        <a href="./gaming.html">Gaming</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-office">Office</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">Workstations</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-all-in-one">All-in-One</a>
+        <a href="https://eurosys.pt/catalogo?categoria=computer-mini-pcs">Mini PCs (NUC)</a>
+        <a href="https://eurosys.pt/catalogo?categoria=portateis">Portáteis</a>
+        <a href="https://eurosys.pt/promocoes">Promoções</a>
+        <a href="https://eurosys.pt/builder">PC Builder</a>
+        <strong>Contacto</strong>
+        <a href="#contacto">Contacto</a>
+        <a href="#suporte">Suporte e Comunidade</a>
+        <a href="#garantia">Garantia e RMA</a>
+        <a href="#faq">FAQ</a>
+        <a href="#empresas">Soluções para Empresas</a>
+        <a href="#sobre">Sobre a Eurosys</a>
+      </div>
+    </aside>
+    <div class="scrim" data-scrim></div>
+
+    <aside class="login-popup" data-login-popup role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <div class="login-popup__header">
+        <strong id="login-title">Entrar na conta</strong>
+        <button type="button" data-login-close aria-label="Fechar login">×</button>
+      </div>
+      <form class="login-form" data-login-form>
+        <label>
+          Email
+          <input type="email" placeholder="email@exemplo.pt" autocomplete="email" required />
+        </label>
+        <label>
+          Password
+          <input type="password" placeholder="A sua password" autocomplete="current-password" required />
+        </label>
+        <button type="submit">Entrar</button>
+        <div class="login-links">
+          <a href="#recuperar-password">Esqueceu a password?</a>
+          <a href="#criar-conta">Criar conta</a>
+        </div>
+      </form>
+    </aside>
+
+    <aside class="drawer cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" data-cart-drawer>
+      <div class="drawer__header">
+        <div class="cart-drawer__title">
+          <span class="cart-drawer__icon" aria-hidden="true"><img src="./assets/cart.svg" alt="" /></span>
+          <strong id="cart-drawer-title">Carrinho <span data-cart-title-count>(0)</span></strong>
+        </div>
+        <button type="button" data-cart-close aria-label="Fechar carrinho">×</button>
+      </div>
+      <div class="drawer__body" data-cart-body>
+        <p>O seu carrinho está vazio.</p>
+      </div>
+      <div class="drawer__footer" data-cart-footer>
+        <button type="button" data-checkout-button>Finalizar compra</button>
+      </div>
+    </aside>
+
+    <aside class="drawer" data-wishlist-drawer aria-label="Lista de desejos">
+      <div class="drawer__header">
+        <strong>Lista de desejos</strong>
+        <button type="button" data-wishlist-close aria-label="Fechar lista de desejos">×</button>
+      </div>
+      <div class="drawer__body" data-wishlist-body>
+        <p>A sua lista de desejos está vazia.</p>
+      </div>
+    </aside>
+
+    <aside class="drawer drawer--wide" data-compare-drawer aria-label="Comparador">
+      <div class="drawer__header">
+        <strong>Comparador</strong>
+        <button type="button" data-compare-close aria-label="Fechar comparador">×</button>
+      </div>
+      <div class="drawer__body" data-compare-body>
+        <p>Selecione até duas máquinas para comparar componentes e configuração.</p>
+      </div>
+    </aside>
+
+    <main
+      class="product-page"
+      data-product-detail
+      data-title="Computer Gaming HYDRA-56I7V1"
+      data-price="1349,00 EUR"
+      data-base-price="1349"
+      data-description="RTX 5060 8GB | I7 12700KF | 2 x RAM 16GB DDR4 3200 CL16 | SSD NVME 1TB"
+      data-cpu="I7 12700KF"
+      data-gpu="RTX 5060 8GB"
+      data-ram="2 x RAM 16GB DDR4 3200 CL16"
+      data-storage="SSD NVME 1TB 2500/1800 PCIE4"
+      data-status="Sobre Encomenda | Validar com loja"
+    >
+      <div class="container">
+        <div class="product-breadcrumb-line">
+        <nav class="breadcrumbs product-breadcrumbs" aria-label="Percurso">
+          <a href="./index.html">Início</a>
+          <span>›</span>
+          <a href="./computadores.html">Catálogo</a>
+          <span>›</span>
+          <a href="./computadores.html">Computer Gaming</a>
+          <span>›</span>
+          <strong>Computer Gaming HYDRA...</strong>
+        </nav>
+        <button class="product-compare-link product-compare-link--breadcrumb" type="button" data-add-detail-compare>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6" /><path d="M21 3 13 11" /><path d="M9 21H3v-6" /><path d="M3 21l8-8" /></svg>
+          Comparar
+        </button>
+        </div>
+      </div>
+
+      <section class="container product-hero" aria-labelledby="product-title-v2">
+        <div class="product-gallery" aria-label="Galeria do produto">
+          <div class="product-gallery__stage product-gallery__stage--real">
+            <span class="product-gallery__badge">Personalizável</span>
+            <img src="https://iapc.pt/images/800x800/4790/Banners-novosite/HYDRA-56I7V1-1080.png" alt="Computer Gaming HYDRA-56I7V1" />
+          </div>
+          <div class="product-gallery__dots" aria-hidden="true">
+            <span class="is-active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="product-gallery__thumbs">
+            <button class="is-active" type="button" aria-label="Imagem principal">
+              <img src="https://iapc.pt/images/800x800/4790/Banners-novosite/HYDRA-56I7V1-1080.png" alt="" />
+            </button>
+            <button type="button" aria-label="Placa gráfica">
+              <img src="https://www.niposom.pt/components/com_virtuemart/shop_image/product/90yv0n12-m0na00.jpg" alt="" />
+            </button>
+            <button type="button" aria-label="Processador">
+              <img src="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/a1700i7-12700kfb.jpg" alt="" />
+            </button>
+            <button type="button" aria-label="Motherboard">
+              <img src="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/90mb1ha0-m0eay0.jpg" alt="" />
+            </button>
+            <button type="button" aria-label="Memória">
+              <img src="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/4d16gs3200kvbx16.jpg" alt="" />
+            </button>
+            <button type="button" aria-label="SSD">
+              <img src="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/aspectrixs20g-1t-c.jpg" alt="" />
+            </button>
+            <button type="button" aria-label="Cooler">
+              <img src="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/icerock-v6plus.jpg" alt="" />
+            </button>
+          </div>
+        </div>
+
+        <article class="product-purchase-card product-purchase-card--v2">
+          <div class="product-v2-purchase-ui">
+            <button class="product-compare-link" type="button" data-add-detail-compare>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6" /><path d="M21 3 13 11" /><path d="M9 21H3v-6" /><path d="M3 21l8-8" /></svg>
+              Comparar
+            </button>
+
+            <div class="product-heading product-heading--v2">
+              <h1 id="product-title-v2">Computer Gaming <br class="mobile-title-break" />HYDRA-56I7V1</h1>
+              <p>RTX 5060 8GB | I7 12700KF | 2 x RAM 16GB DDR4 3200 CL16 | SSD NVME 1TB 2500/1800 PCIE4</p>
+            </div>
+
+            <div class="product-buy-grid">
+              <div class="product-price-block">
+                <strong class="product-price-current">1.349,00&euro;</strong>
+                <del>PVPr* 1.649,00&euro;</del>
+              </div>
+
+              <div class="product-finance-card" data-finance-card>
+                <button class="product-finance-card__title" type="button" aria-expanded="false" aria-controls="finance-options" data-finance-toggle>
+                  <span class="finance-icon">&euro;</span>
+                  <span class="product-finance-card__label">Financiamento</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                </button>
+                <div class="product-finance-card__meta">
+                  <span data-finance-selected>3&times; 449,67 &euro; sem juros</span>
+                  <img class="floa-logo" src="./assets/floa-logo.png" alt="Floa" />
+                </div>
+                <div class="product-finance-card__menu" id="finance-options" role="listbox" aria-label="Escolher financiamento" data-finance-menu>
+                  <button type="button" role="option" aria-selected="true" data-finance-option="3&times; 449,67 &euro; sem juros">
+                    <strong>3&times; 449,67 &euro;</strong>
+                    <span>Sem juros · Total 1.349,00 &euro;</span>
+                  </button>
+                  <button type="button" role="option" aria-selected="false" data-finance-option="4&times; 337,25 &euro; sem juros">
+                    <strong>4&times; 337,25 &euro;</strong>
+                    <span>Sem juros · Total 1.349,00 &euro;</span>
+                  </button>
+                  <button type="button" role="option" aria-selected="false" data-finance-option="6&times; 224,84 &euro; sem juros">
+                    <strong>6&times; 224,84 &euro;</strong>
+                    <span>Sem juros · Total 1.349,00 &euro;</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-status-row product-status-row--v2" aria-label="Estado do produto">
+              <span class="is-available">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="m8.2 12.2 2.4 2.4 5.2-5.4" /></svg>
+                Dispon&iacute;vel
+              </span>
+              <span class="is-order">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="m8.2 12.2 2.4 2.4 5.2-5.4" /></svg>
+                Sobre Encomenda | Validar com loja
+              </span>
+            </div>
+
+            <div class="product-action-row product-action-row--v2">
+              <div class="qty-stepper qty-stepper--v2" aria-label="Quantidade">
+                <button type="button" aria-label="Diminuir quantidade">-</button>
+                <span>1</span>
+                <button type="button" aria-label="Aumentar quantidade">+</button>
+              </div>
+              <button class="product-add-button" type="button" data-add-detail-cart>Adicionar</button>
+              <button class="product-save-button" type="button" data-add-detail-wishlist>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
+                </svg>
+                <span>Guardar</span>
+              </button>
+            </div>
+
+            <div class="product-service-row product-service-row--v2" aria-label="Servi&ccedil;os inclu&iacute;dos">
+              <span>3 Anos Garantia</span>
+              <span>Suporte Vital&iacute;cio</span>
+              <span class="is-green">Portes Gratis - Acima 199&euro;</span>
+            </div>
+          </div>
+          <div class="product-heading">
+            <span>Computer Gaming</span>
+            <em>HYDRA / Intermédio</em>
+            <h1 id="product-title">COMPUTER GAMING HYDRA-56I7V1</h1>
+            <p>RTX 5060 8GB | I7 12700KF | 2 x RAM 16GB DDR4 3200 CL16 | SSD NVME 1TB 2500/1800 PCIE4</p>
+          </div>
+
+          <div class="product-price-row">
+            <div>
+              <strong class="product-price-current">1349<span>00€</span></strong>
+              <small>IVA Inc.</small>
+            </div>
+            <del>1649,00€</del>
+          </div>
+
+          <div class="product-status-row" aria-label="Estado do produto">
+            <span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="m8.2 12.2 2.4 2.4 5.2-5.4" /></svg>
+              Disponível
+            </span>
+            <span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="m8.2 12.2 2.4 2.4 5.2-5.4" /></svg>
+              Sobre Encomenda | Validar com loja
+            </span>
+          </div>
+
+          <div class="product-finance-row">
+            <span>3× 449,67 € sem juros</span>
+            <span>4× 337,25 € sem juros</span>
+            <img class="floa-logo" src="./assets/floa-logo.png" alt="Floa" />
+          </div>
+
+          <div class="product-action-row">
+            <div class="qty-stepper" aria-label="Quantidade">
+              <button type="button" aria-label="Diminuir quantidade">−</button>
+              <span>1</span>
+              <button type="button" aria-label="Aumentar quantidade">+</button>
+            </div>
+            <button class="product-add-button" type="button" data-add-detail-cart>Adicionar</button>
+            <button class="product-save-button" type="button" data-add-detail-wishlist>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" />
+              </svg>
+              <span>Guardar</span>
+            </button>
+          </div>
+
+          <div class="product-service-row">
+            <span>
+              <img class="service-icon" src="./assets/product-icons/garantia-pdf.svg" alt="" aria-hidden="true" />
+              <strong>3 anos de garantia</strong>
+              <small>Componentes e mão de obra</small>
+            </span>
+            <span>
+              <img class="service-icon" src="./assets/product-icons/suporte-pdf.svg" alt="" aria-hidden="true" />
+              <strong>Suporte vitalício</strong>
+              <small>Ajuda especializada</small>
+            </span>
+            <span>
+              <img class="service-icon" src="./assets/product-icons/portes-pdf.svg" alt="" aria-hidden="true" />
+              <strong>Portes grátis</strong>
+              <small>Acima de €199</small>
+            </span>
+          </div>
+
+          <section class="configuration-summary" aria-labelledby="summary-title">
+            <h2 id="summary-title">A tua configuração:</h2>
+            <ul>
+              <li data-summary-row="gpu"><span>✓</span><strong>Placa Gráfica:</strong> <em data-summary-value="gpu">PLACA GRAFICA ASUS DUAL RTX 5060 OC 8GB GDDR7</em></li>
+              <li data-summary-row="memory"><span>✓</span><strong>Memória:</strong> <em data-summary-value="memory">2× 16GB DDR4 3200 MEM RAM CL16 KLEVV BOLT X</em></li>
+              <li data-summary-row="storage"><span>✓</span><strong>Storage:</strong> <em data-summary-value="storage">DISCO M.2 PCIE3.0 2280 SSD ADATA XPG SX S20G 1TB 2500/1800</em></li>
+              <li><span>✓</span><strong>Cooler:</strong> COOLER CPU 6PIPES FAN 120 PWM ARGB NTECH AM5/1700 READY</li>
+              <li><span>✓</span><strong>Fonte:</strong> FONTE ALIMENTACAO BRONZE NTECH HYDRA RX750 750W</li>
+            </ul>
+          </section>
+        </article>
+      </section>
+
+      <section class="container product-v2-overview" aria-labelledby="product-overview-title">
+        <div class="product-v2-story">
+          <h2 id="product-overview-title" class="sr-only">Descrição da HYDRA-56I7V1</h2>
+          <p>A HYDRA-56I7V1 é a tua nova estação de batalha para gaming e produtividade exigente. Construída à volta da poderosa RTX 5060 de 8GB da ASUS, esta máquina foi desenhada para quem quer jogar em 1080p ou 1440p com ray tracing ativado e todas as definições no máximo, além de acelerar tarefas criativas com os seus 3840 núcleos CUDA.</p>
+          <p>No coração, o Intel Core i7-12700KF de 12ª geração com 12 núcleos e 20 threads garante uma fluidez impressionante, quer estejas a fazer streaming ou a compilar código. Os 16GB de RAM DDR4 a 3200MHz e o SSD NVMe de 1TB oferecem respostas instantâneas e espaço de sobra para a tua biblioteca, sem qualquer espécie de gargalo.</p>
+          <p>O conjunto é montado numa caixa ATX Mesh com três ventoinhas ARGB reversas, criando um fluxo de ar eficiente e um visual limpo. A garantia de 2 anos cobre todos os componentes, e podes levar esta besta para casa por apenas 1.349,00€.</p>
+        </div>
+
+        <aside class="product-v2-tech-card" aria-labelledby="product-tech-title">
+          <div class="product-v2-tech-card__header">
+            <h2 id="product-tech-title">Configuração Base</h2>
+          </div>
+          <ul>
+            <li>
+              <button type="button" data-config-spec-detail data-config-key="gpu" data-config-name="PLACA GRAFICA ASUS DUAL RTX 5060 OC 8GB GDDR7" data-config-ref="90YV0N12-M0NA00" data-config-specs="8GB VRAM · GDDR7 · PCIe 5.0" data-config-performance="Joga a 1440p High em títulos AAA" data-config-fps="Cyberpunk 2077 ~90fps · FC25 ~165fps · Baldur's Gate 3 ~125fps" aria-label="Ver detalhes de RTX 5060 8GB">
+                <span class="product-v2-tech-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 12h2M18 16h2M18 20h2M18 4h2M18 8h2M4 12h2M4 16h2M4 20h2M4 4h2M4 8h2" /><path d="M8 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-1.5c-.28 0-.49.23-.56.5a2 2 0 0 1-3.88 0C9.99 2.23 9.78 2 9.5 2Z" /></svg></span>
+                <span class="product-v2-tech-card__copy">
+                  <span>Placa Gráfica</span>
+                  <strong>PLACA GRAFICA ASUS DUAL RTX 5060 OC 8GB GDDR7</strong>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-config-spec-detail data-config-key="cpu" data-config-name="I7 12700KF 1700 2.7 A 5.0GHZ 25M 8PC+4EC/20T 125/190W TRAY" data-config-ref="TBD" data-config-specs="1700 · 2.7 A 5.0GHZ · 25M · 8PC+4EC/20T" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais" aria-label="Ver detalhes de I7 12700KF">
+                <span class="product-v2-tech-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20v2M12 2v2M17 20v2M17 2v2M2 12h2M2 17h2M2 7h2M20 12h2M20 17h2M20 7h2M7 20v2M7 2v2" /><rect x="4" y="4" width="16" height="16" rx="2" /><rect x="8" y="8" width="8" height="8" rx="1" /></svg></span>
+                <span class="product-v2-tech-card__copy">
+                  <span>Processador</span>
+                  <strong>I7 12700KF 1700 2.7 A 5.0GHZ 25M 8PC+4EC/20T 125/190W TRAY</strong>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-config-spec-detail data-config-key="motherboard" data-config-name="PRIME B760M-R D4 ASUS 2XDDR4 1XM.2 PCIE4.0 MATX" data-config-ref="TBD" data-config-specs="B760M-R D4 · 2XDDR4 · 1XM.2 · PCIE4.0 · MATX" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais" aria-label="Ver detalhes de B760 MICRO-ATX 2DDR4">
+                <span class="product-v2-tech-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M11 9h4a2 2 0 0 0 2-2V3" /><circle cx="9" cy="9" r="2" /><path d="M7 21v-4a2 2 0 0 1 2-2h4" /><circle cx="15" cy="15" r="2" /></svg></span>
+                <span class="product-v2-tech-card__copy">
+                  <span>Motherboard</span>
+                  <strong>PRIME B760M-R D4 ASUS 2XDDR4 1XM.2 PCIE4.0 MATX</strong>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-config-spec-detail data-config-key="memory" data-config-name="2× 16GB DDR4 3200 MEM RAM (1X16GB) CL16 KLEVV BOLT X" data-config-ref="4D16GS3200KVBX16" data-config-specs="32GB total · DDR4 · 3200MHz · CL16" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais" aria-label="Ver detalhes de RAM 16GB DDR4 3200 CL16">
+                <span class="product-v2-tech-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M8 11V9M16 11V9M12 11V9M2 15h20" /><path d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1.1a2 2 0 0 0 0 3.84V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5.1a2 2 0 0 0 0-3.84Z" /></svg></span>
+                <span class="product-v2-tech-card__copy">
+                  <span>Memória</span>
+                  <strong>2× 16GB DDR4 3200 MEM RAM (1X16GB) CL16 KLEVV BOLT X</strong>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-config-spec-detail data-config-key="storage" data-config-name="DISCO M.2 PCIE3.0 2280 SSD ADATA XPG SX S20G 1TB 2500/1800" data-config-ref="ASPECTRIXS20G-1T-C" data-config-specs="1TB · M.2 2280 · PCIe 3.0 · 2500/1800" data-config-performance="Componente incluído na configuração" data-config-fps="Leitura até 2500MB/s · escrita até 1800MB/s" aria-label="Ver detalhes de SSD NVME 1TB 2500/1800 PCIE4">
+                <span class="product-v2-tech-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 12H2" /><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11Z" /><path d="M6 16h.01M10 16h.01" /></svg></span>
+                <span class="product-v2-tech-card__copy">
+                  <span>Storage 1</span>
+                  <strong>DISCO M.2 PCIE3.0 2280 SSD ADATA XPG SX S20G 1TB 2500/1800</strong>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-config-spec-detail data-config-key="cooler" data-config-name="COOLER CPU 6PIPES FAN 120 PWM ARGB NTECH AM5/1700 READY" data-config-ref="TBD" data-config-specs="6PIPES · FAN 120 PWM · ARGB · AM5/1700 READY" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais" aria-label="Ver detalhes de COOLER TORRE FAN 120 PT ARGB">
+                <span class="product-v2-tech-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10.83 16.38a6.08 6.08 0 0 1-8.62-7l5.41 1.45a6.08 6.08 0 0 1 7-8.62l-1.45 5.41a6.08 6.08 0 0 1 8.62 7l-5.41-1.45a6.08 6.08 0 0 1-7 8.62Z" /><path d="M12 12v.01" /></svg></span>
+                <span class="product-v2-tech-card__copy">
+                  <span>Cooler</span>
+                  <strong>COOLER CPU 6PIPES FAN 120 PWM ARGB NTECH AM5/1700 READY</strong>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-config-spec-detail data-config-key="fan" data-config-name="SLAYER KIT 3X 120 FAN ARGB AURA SYNC PASS-THROUG REVERSE B" data-config-ref="TBD" data-config-specs="3X 120 FAN · ARGB · AURA SYNC · PASS-THROUG REVERSE B" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais" aria-label="Ver detalhes de KIT FAN ARGB">
+                <span class="product-v2-tech-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10.83 16.38a6.08 6.08 0 0 1-8.62-7l5.41 1.45a6.08 6.08 0 0 1 7-8.62l-1.45 5.41a6.08 6.08 0 0 1 8.62 7l-5.41-1.45a6.08 6.08 0 0 1-7 8.62Z" /><path d="M12 12v.01" /></svg></span>
+                <span class="product-v2-tech-card__copy">
+                  <span>Fan 1</span>
+                  <strong>SLAYER KIT 3X 120 FAN ARGB AURA SYNC PASS-THROUG REVERSE B</strong>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-config-spec-detail data-config-key="case" data-config-name="CAIXA ATX SLAYER RX23 REAPER 3X FAN ARGB FRONTAL MESH" data-config-ref="TBD" data-config-specs="ATX · 3X FAN ARGB · FRONTAL MESH" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais" aria-label="Ver detalhes de CAIXA ATX MESH PT 3X FAN ARGB">
+                <span class="product-v2-tech-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2" /><path d="M15 14h.01M9 6h6M9 10h6" /></svg></span>
+                <span class="product-v2-tech-card__copy">
+                  <span>Caixa</span>
+                  <strong>CAIXA ATX SLAYER RX23 REAPER 3X FAN ARGB FRONTAL MESH</strong>
+                </span>
+              </button>
+            </li>
+            <li>
+              <button type="button" data-config-spec-detail data-config-key="psu" data-config-name="FONTE ALIMENTACAO BRONZE NTECH HYDRA RX750 750W 62A/12V SR" data-config-ref="TBD" data-config-specs="BRONZE · 750W · 62A/12V SR" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais" aria-label="Ver detalhes de PSU BRONZE 750W">
+                <span class="product-v2-tech-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v10" /><path d="M18.4 6.6a9 9 0 1 1-12.77.04" /></svg></span>
+                <span class="product-v2-tech-card__copy">
+                  <span>Fonte de Alimentação</span>
+                  <strong>FONTE ALIMENTACAO BRONZE NTECH HYDRA RX750 750W 62A/12V SR</strong>
+                </span>
+              </button>
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="container product-config-section">
+        <div class="product-config-copy">
+          <p class="section-kicker">Personaliza a configuração</p>
+          <h2>Vê os componentes escolhidos e ajusta os itens disponíveis sem sair da página.</h2>
+          <div class="product-v2-config-form" aria-label="Personalizar configuração" data-config-form>
+            <label data-config-field="gpu">
+              <span>Placa Gráfica</span>
+              <button type="button" aria-expanded="false" data-config-field-toggle><span data-config-field-value>Seleccione uma opção</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
+            </label>
+            <label data-config-field="cpu">
+              <span>Processador</span>
+              <button type="button" aria-expanded="false" data-config-field-toggle><span data-config-field-value>Seleccione uma opção</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
+            </label>
+            <label data-config-field="memory">
+              <span>Memória RAM</span>
+              <button type="button" aria-expanded="false" data-config-field-toggle><span data-config-field-value>Seleccione uma opção</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
+            </label>
+            <label data-config-field="storage">
+              <span>Armazenamento</span>
+              <button type="button" aria-expanded="false" data-config-field-toggle><span data-config-field-value>Seleccione uma opção</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
+            </label>
+            <label data-config-field="psu">
+              <span>Fonte de Alimentação</span>
+              <button type="button" aria-expanded="false" data-config-field-toggle><span data-config-field-value>Seleccione uma opção</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></button>
+            </label>
+          </div>
+
+          <fieldset class="product-v2-insurance" aria-label="Seguros e garantia extra">
+            <legend>Seguros/Garantia Extra:</legend>
+            <label><input type="radio" name="v2-insurance" /> <span>EUROSYS Safety e Roubo por 9,99 € p/mês</span></label>
+            <label><input type="radio" name="v2-insurance" checked /> <span>EUROSYS Safety Dano e Roubo PRO por 12,99 € p/mês</span></label>
+            <label><input type="radio" name="v2-insurance" /> <span>EUROSYS Safety Proteção Multirrisco 3 Anos por 119,00 €</span></label>
+            <label><input type="radio" name="v2-insurance" /> <span>EUROSYS Safety Extensão de Garantia +2 Anos por 99,00 €</span></label>
+          </fieldset>
+          <div class="config-builder" data-config-builder>
+            <h3 class="config-builder__title">Características técnicas</h3>
+
+            <article class="config-group" data-config-group>
+              <button class="config-group__header" type="button" aria-expanded="false" data-config-toggle>
+                <span class="config-group__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 20v2M12 2v2M17 20v2M17 2v2M2 12h2M2 17h2M2 7h2M20 12h2M20 17h2M20 7h2M7 20v2M7 2v2" /><rect x="5" y="5" width="14" height="14" rx="2" /><rect x="9" y="9" width="6" height="6" rx="1" /></svg>
+                </span>
+                <span class="config-group__copy">
+                  <strong>Placa Gráfica</strong>
+                  <em data-config-summary="gpu">PLACA GRAFICA ASUS DUAL RTX 5060 OC 8GB GDDR7</em>
+                </span>
+                <svg class="config-group__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="config-group__body">
+                <p class="config-group__label">Placa Gráfica</p>
+                <div class="config-choice-list" role="radiogroup" aria-label="Escolher placa gráfica">
+                  <article class="config-choice is-selected" data-config-choice data-config-key="gpu" data-config-name="PLACA GRAFICA ASUS DUAL RTX 5060 OC 8GB GDDR7" data-config-short="PLACA GRAFICA ASUS DUAL..." data-config-price="0" data-config-ref="90YV0N12-M0NA00" data-config-image="https://www.niposom.pt/components/com_virtuemart/shop_image/product/90yv0n12-m0na00.jpg" data-config-specs="8GB VRAM · GDDR7 · PCIe 5.0" data-config-performance="Joga a 1440p High em títulos AAA" data-config-fps="Cyberpunk 2077 ~90fps · FC25 ~165fps · Baldur's Gate 3 ~125fps">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="true" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>PLACA GRAFICA ASUS DUAL RTX 5060 OC 8GB GDDR7</strong>
+                        <small>Ref. 90YV0N12-M0NA00 <b>Performance</b> Joga a 1440p High em títulos AAA</small>
+                        <small>Est. FPS: Cyberpunk 2077 ~90fps · FC25 ~165fps · Baldur's Gate 3 ~125fps</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>Incluído</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                    <span class="config-choice__badge">Q/P</span>
+                  </article>
+
+                  <article class="config-choice" data-config-choice data-config-key="gpu" data-config-name="PLACA GRAFICA MANLI POLAR FOX RTX 5060 OC DUAL 8GB GDDR6" data-config-short="PLACA GRAFICA MANLI POLAR FOX..." data-config-price="4.27" data-config-ref="PGV5060PFDF8M7" data-config-image="https://www.niposom.pt/components/com_virtuemart/shop_image/product/90yv0n12-m0na00.jpg" data-config-specs="8GB VRAM · GDDR6 · PCIe 5.0" data-config-performance="Joga a 1440p High em títulos AAA" data-config-fps="Cyberpunk 2077 ~90fps · FC25 ~165fps · Baldur's Gate 3 ~125fps">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="false" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>PLACA GRAFICA MANLI POLAR FOX RTX 5060 OC DUAL 8GB GDDR6</strong>
+                        <small>Ref. PGV5060PFDF8M7 <b>Performance</b> Joga a 1440p High em títulos AAA</small>
+                        <small>Est. FPS: Cyberpunk 2077 ~90fps · FC25 ~165fps · Baldur's Gate 3 ~125fps</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>+4,27</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                    <span class="config-choice__badge config-choice__badge--gaming">Gaming</span>
+                  </article>
+
+                  <article class="config-choice" data-config-choice data-config-key="gpu" data-config-name="PLACA GRAFICA ZOTAC GAMING RTX 5060 SOLO 8GB GDDR7" data-config-short="PLACA GRAFICA ZOTAC GAMING..." data-config-price="15.66" data-config-ref="PGV5060SO8Z7" data-config-image="https://www.niposom.pt/components/com_virtuemart/shop_image/product/90yv0n12-m0na00.jpg" data-config-specs="8GB VRAM · GDDR7 · PCIe 5.0" data-config-performance="Joga a 1440p High em títulos AAA" data-config-fps="Cyberpunk 2077 ~90fps · FC25 ~165fps · Baldur's Gate 3 ~125fps">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="false" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>PLACA GRAFICA ZOTAC GAMING RTX 5060 SOLO 8GB GDDR7</strong>
+                        <small>Ref. PGV5060SO8Z7 <b>Performance</b> Joga a 1440p High em títulos AAA</small>
+                        <small>Est. FPS: Cyberpunk 2077 ~90fps · FC25 ~165fps · Baldur's Gate 3 ~125fps</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>+15,66</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                    <span class="config-choice__badge config-choice__badge--top">TOP</span>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="config-group" data-config-group>
+              <button class="config-group__header" type="button" aria-expanded="false" data-config-toggle>
+                <span class="config-group__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3" /><rect x="5" y="5" width="14" height="14" rx="2.5" /><rect x="9" y="9" width="6" height="6" rx="1" /></svg>
+                </span>
+                <span class="config-group__copy">
+                  <strong>Processador</strong>
+                  <em data-config-summary="cpu">I7 12700KF 1700 2.7 A 5.0GHZ 25M 8PC+4EC/20T 125/190W TRAY</em>
+                </span>
+                <svg class="config-group__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="config-group__body">
+                <p class="config-group__label">Processador</p>
+                <div class="config-choice-list" role="radiogroup" aria-label="Escolher processador">
+                  <article class="config-choice is-selected" data-config-choice data-config-key="cpu" data-config-name="I7 12700KF 1700 2.7 A 5.0GHZ 25M 8PC+4EC/20T 125/190W TRAY" data-config-short="I7 12700KF 1700 2.7 A 5.0GHZ..." data-config-price="0" data-config-ref="TBD" data-config-image="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/a1700i7-12700kfb.jpg" data-config-specs="1700 · 2.7 A 5.0GHZ · 25M · 8PC+4EC/20T" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="true" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>I7 12700KF 1700 2.7 A 5.0GHZ 25M 8PC+4EC/20T 125/190W TRAY</strong>
+                        <small>Ref. TBD <b>Incluído</b> componente da configuração</small>
+                        <small>1700 · 2.7 A 5.0GHZ · 25M · 8PC+4EC/20T</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>Incluído</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="config-group" data-config-group>
+              <button class="config-group__header" type="button" aria-expanded="false" data-config-toggle>
+                <span class="config-group__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 7h3v3H8zM14 7h2M14 10h2M8 15h2M13 14a3 3 0 1 0 0 6M17 16h3M17 19h2" /></svg>
+                </span>
+                <span class="config-group__copy">
+                  <strong>Motherboard</strong>
+                  <em data-config-summary="motherboard">PRIME B760M-R D4 ASUS 2XDDR4 1XM.2 PCIE4.0 MATX</em>
+                </span>
+                <svg class="config-group__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="config-group__body">
+                <p class="config-group__label">Motherboard</p>
+                <div class="config-choice-list" role="radiogroup" aria-label="Escolher motherboard">
+                  <article class="config-choice is-selected" data-config-choice data-config-key="motherboard" data-config-name="PRIME B760M-R D4 ASUS 2XDDR4 1XM.2 PCIE4.0 MATX" data-config-short="PRIME B760M-R D4 ASUS 2XDDR4..." data-config-price="0" data-config-ref="TBD" data-config-image="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/90mb1ha0-m0eay0.jpg" data-config-specs="B760M-R D4 · 2XDDR4 · 1XM.2 · PCIE4.0 · MATX" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="true" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>PRIME B760M-R D4 ASUS 2XDDR4 1XM.2 PCIE4.0 MATX</strong>
+                        <small>Ref. TBD <b>Incluído</b> componente da configuração</small>
+                        <small>B760M-R D4 · 2XDDR4 · 1XM.2 · PCIE4.0 · MATX</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>Incluído</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="config-group" data-config-group>
+              <button class="config-group__header" type="button" aria-expanded="false" data-config-toggle>
+                <span class="config-group__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6 19v-3M10 19v-3M14 19v-3M18 19v-3M8 11V9M12 11V9M16 11V9M2 15h20" /><path d="M2 7a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v1.1a2 2 0 0 0 0 3.8V17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5.1a2 2 0 0 0 0-3.8Z" /></svg>
+                </span>
+                <span class="config-group__copy">
+                  <strong>Memória</strong>
+                  <em data-config-summary="memory">2× 16GB DDR4 3200 MEM RAM CL16 KLEVV BOLT X</em>
+                </span>
+                <svg class="config-group__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="config-group__body">
+                <p class="config-group__label">Memória</p>
+                <div class="config-choice-list" role="radiogroup" aria-label="Escolher memória">
+                  <article class="config-choice is-selected" data-config-choice data-config-key="memory" data-config-name="2× 16GB DDR4 3200 MEM RAM CL16 KLEVV BOLT X" data-config-short="2× 16GB DDR4 3200..." data-config-price="0" data-config-ref="4D16GS3200KVBX16" data-config-image="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/4d16gs3200kvbx16.jpg" data-config-specs="32GB total · DDR4 · 3200MHz · CL16" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="true" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>2× 16GB DDR4 3200 MEM RAM CL16 KLEVV BOLT X</strong>
+                        <small>Ref. 4D16GS3200KVBX16 <b>Incluído</b> componente da configuração</small>
+                        <small>32GB total · DDR4 · 3200MHz · CL16</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>Incluído</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="config-group" data-config-group>
+              <button class="config-group__header" type="button" aria-expanded="false" data-config-toggle>
+                <span class="config-group__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M22 12H2" /><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.8 4H7.2a2 2 0 0 0-1.7 1.1Z" /><path d="M6 16h.01M10 16h.01" /></svg>
+                </span>
+                <span class="config-group__copy">
+                  <strong>Storage 1</strong>
+                  <em data-config-summary="storage">DISCO M.2 PCIE3.0 2280 SSD ADATA XPG SX S20G 1TB 2500/1800</em>
+                </span>
+                <svg class="config-group__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="config-group__body">
+                <p class="config-group__label">Storage</p>
+                <div class="config-choice-list" role="radiogroup" aria-label="Escolher storage">
+                  <article class="config-choice is-selected" data-config-choice data-config-key="storage" data-config-name="DISCO M.2 PCIE3.0 2280 SSD ADATA XPG SX S20G 1TB 2500/1800" data-config-short="DISCO M.2 PCIE3.0 1TB..." data-config-price="0" data-config-ref="ASPECTRIXS20G-1T-C" data-config-image="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/aspectrixs20g-1t-c.jpg" data-config-specs="1TB · M.2 2280 · PCIe 3.0 · 2500/1800" data-config-performance="Componente incluído na configuração" data-config-fps="Leitura até 2500MB/s · escrita até 1800MB/s">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="true" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>DISCO M.2 PCIE3.0 2280 SSD ADATA XPG SX S20G 1TB 2500/1800</strong>
+                        <small>Ref. ASPECTRIXS20G-1T-C <b>Incluído</b> componente da configuração</small>
+                        <small>1TB · M.2 2280 · PCIe 3.0 · 2500/1800</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>Incluído</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="config-group" data-config-group>
+              <button class="config-group__header" type="button" aria-expanded="false" data-config-toggle>
+                <span class="config-group__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2v6M12 16v6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M16 12h6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24" /><circle cx="12" cy="12" r="3" /></svg>
+                </span>
+                <span class="config-group__copy">
+                  <strong>Cooler</strong>
+                  <em data-config-summary="cooler">COOLER CPU 6PIPES FAN 120 PWM ARGB NTECH AM5/1700 READY</em>
+                </span>
+                <svg class="config-group__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="config-group__body">
+                <p class="config-group__label">Cooler</p>
+                <div class="config-choice-list" role="radiogroup" aria-label="Escolher cooler">
+                  <article class="config-choice is-selected" data-config-choice data-config-key="cooler" data-config-name="COOLER CPU 6PIPES FAN 120 PWM ARGB NTECH AM5/1700 READY" data-config-short="COOLER CPU 6PIPES FAN 120 PWM..." data-config-price="0" data-config-ref="TBD" data-config-image="https://iapc.pt/images/800x800/components/com_virtuemart/shop_image/product/icerock-v6plus.jpg" data-config-specs="6PIPES · FAN 120 PWM · ARGB · AM5/1700 READY" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="true" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>COOLER CPU 6PIPES FAN 120 PWM ARGB NTECH AM5/1700 READY</strong>
+                        <small>Ref. TBD <b>Incluído</b> componente da configuração</small>
+                        <small>6PIPES · FAN 120 PWM · ARGB · AM5/1700 READY</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>Incluído</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="config-group" data-config-group>
+              <button class="config-group__header" type="button" aria-expanded="false" data-config-toggle>
+                <span class="config-group__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2v6M12 16v6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M16 12h6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24" /><circle cx="12" cy="12" r="3" /></svg>
+                </span>
+                <span class="config-group__copy">
+                  <strong>Fan 1</strong>
+                  <em data-config-summary="fan">SLAYER KIT 3X 120 FAN ARGB AURA SYNC PASS-THROUG REVERSE B</em>
+                </span>
+                <svg class="config-group__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="config-group__body">
+                <p class="config-group__label">Fan 1</p>
+                <div class="config-choice-list" role="radiogroup" aria-label="Escolher fan">
+                  <article class="config-choice is-selected" data-config-choice data-config-key="fan" data-config-name="SLAYER KIT 3X 120 FAN ARGB AURA SYNC PASS-THROUG REVERSE B" data-config-short="SLAYER KIT 3X 120 FAN ARGB..." data-config-price="0" data-config-ref="TBD" data-config-image="" data-config-specs="3X 120 FAN · ARGB · AURA SYNC · PASS-THROUG REVERSE B" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="true" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>SLAYER KIT 3X 120 FAN ARGB AURA SYNC PASS-THROUG REVERSE B</strong>
+                        <small>Ref. TBD <b>Incluído</b> componente da configuração</small>
+                        <small>3X 120 FAN · ARGB · AURA SYNC · PASS-THROUG REVERSE B</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>Incluído</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="config-group" data-config-group>
+              <button class="config-group__header" type="button" aria-expanded="false" data-config-toggle>
+                <span class="config-group__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2" /><path d="M10 7h4M10 11h4M12 16h.01" /></svg>
+                </span>
+                <span class="config-group__copy">
+                  <strong>Caixa</strong>
+                  <em data-config-summary="case">CAIXA ATX SLAYER RX23 REAPER 3X FAN ARGB FRONTAL MESH</em>
+                </span>
+                <svg class="config-group__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="config-group__body">
+                <p class="config-group__label">Caixa</p>
+                <div class="config-choice-list" role="radiogroup" aria-label="Escolher caixa">
+                  <article class="config-choice is-selected" data-config-choice data-config-key="case" data-config-name="CAIXA ATX SLAYER RX23 REAPER 3X FAN ARGB FRONTAL MESH" data-config-short="CAIXA ATX SLAYER RX23 REAPER..." data-config-price="0" data-config-ref="TBD" data-config-image="" data-config-specs="ATX · 3X FAN ARGB · FRONTAL MESH" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="true" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>CAIXA ATX SLAYER RX23 REAPER 3X FAN ARGB FRONTAL MESH</strong>
+                        <small>Ref. TBD <b>Incluído</b> componente da configuração</small>
+                        <small>ATX · 3X FAN ARGB · FRONTAL MESH</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>Incluído</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                  </article>
+                </div>
+              </div>
+            </article>
+
+            <article class="config-group" data-config-group>
+              <button class="config-group__header" type="button" aria-expanded="false" data-config-toggle>
+                <span class="config-group__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 2v10" /><path d="M18.36 6.64a9 9 0 1 1-12.72 0" /></svg>
+                </span>
+                <span class="config-group__copy">
+                  <strong>Fonte de Alimentação</strong>
+                  <em data-config-summary="psu">FONTE ALIMENTACAO BRONZE NTECH HYDRA RX750 750W 62A/12V SR</em>
+                </span>
+                <svg class="config-group__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+
+              <div class="config-group__body">
+                <p class="config-group__label">Fonte de Alimentação</p>
+                <div class="config-choice-list" role="radiogroup" aria-label="Escolher fonte de alimentação">
+                  <article class="config-choice is-selected" data-config-choice data-config-key="psu" data-config-name="FONTE ALIMENTACAO BRONZE NTECH HYDRA RX750 750W 62A/12V SR" data-config-short="FONTE ALIMENTACAO BRONZE NTECH..." data-config-price="0" data-config-ref="TBD" data-config-image="" data-config-specs="BRONZE · 750W · 62A/12V SR" data-config-performance="Componente incluído na configuração" data-config-fps="TBD: validar dados técnicos finais">
+                    <button class="config-choice__main" type="button" role="radio" aria-checked="true" data-config-select>
+                      <span class="config-choice__box" aria-hidden="true"></span>
+                      <span class="config-choice__copy">
+                        <strong>FONTE ALIMENTACAO BRONZE NTECH HYDRA RX750 750W 62A/12V SR</strong>
+                        <small>Ref. TBD <b>Incluído</b> componente da configuração</small>
+                        <small>BRONZE · 750W · 62A/12V SR</small>
+                      </span>
+                    </button>
+                    <span class="config-choice__price"><strong>Incluído</strong><button type="button" data-config-detail>+ Detalhes</button></span>
+                  </article>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="product-options-card" aria-labelledby="options-title" data-product-options>
+          <p class="section-kicker">Opcionais</p>
+          <div class="optional-panel">
+            <h2 id="options-title">Adicionar ao seu pedido</h2>
+
+            <div class="optional-list">
+              <article class="optional-item optional-item--select" data-optional-item data-optional-price="0" data-optional-selected-name="">
+                <label class="optional-item__label">
+                  <span class="optional-check" aria-hidden="true"></span>
+                  <input class="sr-only" type="checkbox" aria-label="Monitor" data-optional-checkbox data-optional-name="Monitor" data-optional-category="Monitor" data-optional-price="0" />
+                  <span class="optional-item__text">
+                    <strong>Monitor</strong>
+                  </span>
+                  <span class="optional-price" data-optional-price-label>+€0,00</span>
+                </label>
+
+                <div class="optional-select" data-optional-select>
+                  <button class="optional-select__button" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Monitor: Nenhuma opção selecionada" data-optional-select-toggle>
+                    <span data-optional-selected-label>Nenhuma opção selecionada</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+                  </button>
+                  <ul class="optional-select__list" role="listbox" aria-label="Monitor">
+                    <li>
+                      <button class="optional-select__option is-selected" type="button" role="option" aria-selected="true" data-monitor-option data-label="Nenhuma opção selecionada" data-price="0">
+                        <span class="optional-radio" aria-hidden="true"></span>
+                        <span class="optional-select__copy">
+                          <strong>Nenhuma opção selecionada</strong>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="optional-select__option" type="button" role="option" aria-selected="false" data-monitor-option data-label='23.8" FHD IPS 300HZ 1MS' data-price="144.53">
+                        <span class="optional-radio" aria-hidden="true"></span>
+                        <img src="https://www.niposom.pt/components/com_virtuemart/shop_image/product/24rx3h300sp.jpg" alt="" />
+                        <span class="optional-select__copy">
+                          <strong>23.8&quot; FHD IPS 300HZ 1MS</strong>
+                          <small>+ €144,53</small>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="optional-select__option" type="button" role="option" aria-selected="false" data-monitor-option data-label='23.8" FHD IPS 100HZ 1MS' data-price="97.60">
+                        <span class="optional-radio" aria-hidden="true"></span>
+                        <img src="https://www.niposom.pt/components/com_virtuemart/shop_image/product/24rx3h100p.jpg" alt="" />
+                        <span class="optional-select__copy">
+                          <strong>23.8&quot; FHD IPS 100HZ 1MS</strong>
+                          <small>+ €97,60</small>
+                        </span>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="optional-select__option" type="button" role="option" aria-selected="false" data-monitor-option data-label='23.8" FHD IPS 180HZ 1MS' data-price="102.46">
+                        <span class="optional-radio" aria-hidden="true"></span>
+                        <img src="https://www.niposom.pt/components/com_virtuemart/shop_image/product/24rx3h180sp.jpg" alt="" />
+                        <span class="optional-select__copy">
+                          <strong>23.8&quot; FHD IPS 180HZ 1MS</strong>
+                          <small>+ €102,46</small>
+                        </span>
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="optional-item" data-optional-item data-optional-price="15.80">
+                <label class="optional-item__label">
+                  <span class="optional-check" aria-hidden="true"></span>
+                  <input class="sr-only" type="checkbox" aria-label="TECLADO GAMER USB" data-optional-checkbox data-optional-name="TECLADO GAMER USB" data-optional-category="Teclado" data-optional-price="15.80" />
+                  <span class="optional-thumb"><img src="https://www.niposom.pt/components/com_virtuemart/shop_image/product/tg8120slayer-rgb.jpg" alt="" /></span>
+                  <span class="optional-item__text">
+                    <strong>TECLADO GAMER USB</strong>
+                    <small>Teclado</small>
+                  </span>
+                  <span class="optional-price">+€15,80</span>
+                </label>
+              </article>
+
+              <article class="optional-item" data-optional-item data-optional-price="7.61">
+                <label class="optional-item__label">
+                  <span class="optional-check" aria-hidden="true"></span>
+                  <input class="sr-only" type="checkbox" aria-label="RATO GAMER 3500 DPI" data-optional-checkbox data-optional-name="RATO GAMER 3500 DPI" data-optional-category="Rato" data-optional-price="7.61" />
+                  <span class="optional-thumb"><img src="https://www.niposom.pt/components/com_virtuemart/shop_image/product/msrx350.jpg" alt="" /></span>
+                  <span class="optional-item__text">
+                    <strong>RATO GAMER 3500 DPI</strong>
+                    <small>Rato</small>
+                  </span>
+                  <span class="optional-price">+€7,61</span>
+                </label>
+              </article>
+
+              <article class="optional-item" data-optional-item data-optional-price="129.84">
+                <label class="optional-item__label">
+                  <span class="optional-check" aria-hidden="true"></span>
+                  <input class="sr-only" type="checkbox" aria-label="S.O. WIN 11" data-optional-checkbox data-optional-name="S.O. WIN 11" data-optional-category="Sistema Operativo" data-optional-price="129.84" />
+                  <span class="optional-thumb"><img src="https://www.niposom.pt/components/com_virtuemart/shop_image/product/sofwin11p64.jpg" alt="" /></span>
+                  <span class="optional-item__text">
+                    <strong>S.O. WIN 11</strong>
+                    <small>Sistema Operativo</small>
+                  </span>
+                  <span class="optional-price">+€129,84</span>
+                </label>
+              </article>
+            </div>
+
+            <div class="optional-summary" aria-live="polite">
+              <span data-optional-summary>Sem opcionais selecionados</span>
+              <strong data-optional-total>+€0,00</strong>
+            </div>
+          </div>
+          <p class="optional-note">Nada é adicionado ao carrinho sem a tua autorização.</p>
+        </aside>
+      </section>
+
+      <aside class="config-detail-panel" aria-hidden="true" aria-label="Detalhes do componente" data-config-detail-panel>
+        <button class="config-detail-panel__scrim" type="button" aria-label="Fechar detalhes" data-config-detail-close></button>
+        <article class="config-detail-panel__card" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="config-detail-title">
+          <header class="config-detail-panel__header">
+            <div class="config-detail-panel__heading">
+              <p class="config-detail-panel__category" data-config-detail-category>PLACA GR&Aacute;FICA</p>
+              <h2 id="config-detail-title" data-config-detail-title>PLACA GRAFICA ASUS DUAL RTX 5060 OC 8GB GDDR7</h2>
+              <p class="config-detail-panel__brand" data-config-detail-brand>ASUS</p>
+            </div>
+            <button class="config-detail-panel__close" type="button" aria-label="Fechar detalhes" data-config-detail-close>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
+            </button>
+          </header>
+          <div class="config-detail-panel__body">
+            <section class="config-detail-section">
+              <h3>Destaques</h3>
+              <div class="config-detail-chips">
+                <span>8GB VRAM</span>
+                <span>GDDR7</span>
+                <span>PCIe 5.0</span>
+              </div>
+            </section>
+            <section class="config-detail-section">
+              <h3>Especificações</h3>
+              <dl class="config-detail-specs">
+                <div><dt>Referência</dt><dd>90YV0N12-M0NA00</dd></div>
+                <div><dt>Marca</dt><dd>ASUS</dd></div>
+                <div><dt>Modelo</dt><dd>PLACA GRAFICA ASUS DUAL RTX 5060 OC 8GB GDDR7</dd></div>
+                <div><dt>Especificações</dt><dd>8GB VRAM · GDDR7 · PCIe 5.0</dd></div>
+              </dl>
+            </section>
+          </div>
+        </article>
+      </aside>
+
+      <section id="mawdy" class="container mawdy-banner" aria-label="Proteção MAWDY">
+        <a class="mawdy-banner__link" href="#mawdy" aria-label="Ver mais informações sobre a proteção MAWDY">
+          <img src="./assets/mawdy-banner.png" alt="MAWDY. Proteja o seu investimento com extensão de garantia, danos acidentais, roubo e assistência especializada." loading="lazy" />
+        </a>
+      </section>
+
+      <section class="container related-products" aria-labelledby="related-title">
+        <span>Também podes gostar</span>
+        <h2 id="related-title">Alternativas na mesma gama</h2>
+        <div class="related-grid">
+          <article class="related-card">
+            <img src="https://iapc.pt/images/800x800/4790/Banners-novosite/RAPTOR-0RR5V1-1080.png" alt="Computer Gaming - RAPTOR-0RR5V1" />
+            <h3>Computer Gaming - RAPTOR-0RR5V1</h3>
+            <p>RYZEN5 5500GT | 2 x RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB</p>
+            <strong>464,00 €</strong>
+            <a href="./produto.html">Ver detalhes →</a>
+          </article>
+          <article class="related-card">
+            <img src="https://iapc.pt/images/800x800/4790/Banners-novosite/RAPTOR-0RR5V2-1080.png" alt="Computer Gaming - RAPTOR-0RR5V2" />
+            <h3>Computer Gaming - RAPTOR-0RR5V2</h3>
+            <p>RYZEN5 5600GT | 2 x RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB</p>
+            <strong>484,00 €</strong>
+            <a href="./produto.html">Ver detalhes →</a>
+          </article>
+          <article class="related-card">
+            <img src="https://iapc.pt/images/800x800/4790/Banners-novosite/RAPTOR-0RR7V2-1080.png" alt="Computer Gaming - RAPTOR-0RR7V2" />
+            <h3>Computer Gaming - RAPTOR-0RR7V2</h3>
+            <p>RYZEN7 5750G | 2 x RAM 8GB DDR4 3200 CL22 | SSD SATA 512GB</p>
+            <strong>494,00 €</strong>
+            <a href="./produto.html">Ver detalhes →</a>
+          </article>
+        </div>
+      </section>
+
+      <aside class="sticky-buy-bar" aria-label="Compra rápida">
+        <div class="sticky-buy-bar__inner container">
+          <img src="./assets/category-cutouts/HYDRA-56i5V2-56R7V4-hyperreal.png" alt="" />
+          <h2 class="sticky-buy-bar__title">Computer Gaming HYDRA-56I7V1</h2>
+          <a class="sticky-buy-bar__config" href="#summary-title">Ver Config.</a>
+          <div class="sticky-buy-bar__price">
+            <del>1649,00€</del>
+            <span>Poupa 300€</span>
+          </div>
+          <strong>1349<span>00€</span></strong>
+          <button type="button" data-add-detail-cart data-buy-now>Comprar</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <details class="footer-panel" open>
+          <summary>Produtos</summary>
+          <a href="./computadores.html">Computadores</a>
+          <a href="./gaming.html">Gaming</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-office">Office</a>
+          <a href="https://eurosys.pt/catalogo?categoria=computer-workstations">Workstations</a>
+          <a href="https://eurosys.pt/builder">PC Builder</a>
+        </details>
+        <details class="footer-panel" open>
+          <summary>Empresa</summary>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#contacto">As nossas Lojas</a>
+          <a href="#marcas">Marcas</a>
+          <a href="#carreiras">Recrutamento</a>
+          <a href="#empresas">Soluções para Empresas</a>
+        </details>
+        <details class="footer-panel" open>
+          <summary>Ajuda</summary>
+          <a href="#suporte">Assistência Técnica</a>
+          <a href="#portes">Portes de Envio</a>
+          <a href="#pagamentos">Métodos de Pagamento</a>
+          <a href="#faq">Perguntas Frequentes</a>
+          <a href="#garantia">Procedimentos de Garantia</a>
+        </details>
+        <details class="footer-panel" open>
+          <summary>Legal</summary>
+          <a href="#termos">Termos e Condições</a>
+          <a href="#privacidade">Política de Privacidade</a>
+          <a href="#cookies">Política de Cookies</a>
+          <a href="#reclamacoes">Livro de Reclamações</a>
+          <a href="#litigios">Resolução de Litígios</a>
+        </details>
+        <section class="footer-contact" aria-label="Contactos Eurosys">
+          <strong>Contactos</strong>
+          <p>Lisboa, Guarda, Castelo Branco e Aveiro</p>
+          <a href="https://wa.me/351928429780">WhatsApp +351 928 429 780</a>
+          <a href="tel:+351218440262">+351 218 440 262</a>
+          <div class="footer-social" aria-label="Redes sociais">
+            <a href="#facebook" aria-label="Facebook">f</a>
+            <a href="#instagram" aria-label="Instagram">ig</a>
+            <a href="#youtube" aria-label="YouTube">yt</a>
+          </div>
+        </section>
+      </div>
+      <div class="container footer-bottom">
+        <p><a href="#privacidade">Política de Privacidade</a> | <a href="#termos">Termos de Utilização</a> | <a href="#devolucoes">Política de Devolução</a></p>
+        <p>© 2026 Eurosys. Todos os direitos reservados. IVA incluído à taxa em vigor. As fotos apresentadas podem não corresponder às configurações descritas.</p>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
